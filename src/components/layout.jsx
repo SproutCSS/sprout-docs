@@ -1,6 +1,7 @@
 import React from 'react'
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
+import CodeBlock from '@theme/CodeBlock';
 import '../css/layout.css'
 import '../css/sprout.css'
 
@@ -14,16 +15,8 @@ export default function Layout({ title, options, preview, html, jsx }) {
                 preview={<div className="flex">
                     {preview[0]}
                 </div>}
-                html={
-                    html.map(row => {
-                        return `${row}`
-                    })
-                }
-                jsx={
-                    jsx.map(row => {
-                        return `${row}`
-                    })
-                }
+                html={html}
+                jsx={jsx}
             />
         </>
     )
@@ -37,18 +30,10 @@ function Code({ preview, html, jsx }) {
                 {preview}
             </TabItem>
             <TabItem value="html" label="HTML">
-                ```html
-
-                {html}
-
-                ```
+                <CodeBlock language="html">{html}</CodeBlock>
             </TabItem>
             <TabItem value="jsx" label="JSX">
-                ```jsx
-
-                {jsx}
-
-                ```
+                <CodeBlock language="jsx">{jsx}</CodeBlock>
             </TabItem>
         </Tabs>
     );
