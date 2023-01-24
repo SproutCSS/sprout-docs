@@ -1,0 +1,32 @@
+import Layout from '../../src/components/layout'
+
+<Layout
+  title="Primary Button"
+  options={{
+    desc: "btn-primary <btn-size> <btn-hover>",
+    options: [{
+      name: "btn-size",
+      choices: "btn-small btn btn-md btn-lg"
+    },
+    {
+      name: "btn-hover",
+      choices: "btn-outline btn-darker btn-lighter"
+    },
+    ]
+  }}
+  preview={
+    [< div className="flex" >
+      <button class="btn-primary btn-xs btn-outline" >button</button>
+      <button class="btn-primary btn-sm btn-lighter" >button</button>
+      <button class="btn-primary btn btn-darker" >button</button>
+      <button class="btn-primary btn-md btn-darker" >button</button>
+      <button class="btn-primary btn-lg btn-darker" >button</button>
+    </div >]}
+  html={[
+    <button class="btn-primary btn" >button</button>,
+    <button class="btn-primary btn" >button</button>
+  ]}
+  jsx={[
+    <button className="btn-primary btn">button</button>
+  ]}
+/>
