@@ -1,0 +1,48 @@
+.options {
+  display: grid;
+}
+.options .class {
+  font-weight: 700;
+  padding: 0.2em 0.6em;
+  background-color: rgba(132, 180, 252, 0.446);
+  border-radius: 6px;
+  margin-bottom: 0.2em;
+}
+
+.options .row {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 1em;
+  padding: 0 0.6em;
+
+  /* fix for weird styling */
+  width: 100%;
+  justify-self: center;
+}
+.row h4 {
+  font-weight: 500;
+  min-width: 100px;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
+}
+.row .choices {
+  display: flex;
+  gap: 0.4em;
+}
+.choices .btn {
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 4px;
+  background-color: rgb(234, 234, 234, 0.5);
+  height: 2em;
+  padding: 0 0.4em;
+}
+.choices .btn:hover {
+  background-color: rgb(234, 234, 234, 0.7);
+}
+
+.flex * {
+  margin: 0 0.2em;
+}
