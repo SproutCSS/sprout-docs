@@ -6,7 +6,7 @@ import '../css/layout.css'
 import '../css/sprout.css'
 
 
-export default function Layout({ title, options, preview, html, jsx }) {
+export default function Layout({ title, options, preview, html, jsx, next }) {
     return (
         <>
             <h3>{title}</h3>
@@ -17,13 +17,14 @@ export default function Layout({ title, options, preview, html, jsx }) {
                 </div>}
                 html={html}
                 jsx={jsx}
+                next={next}
             />
         </>
     )
 }
 
 
-function Code({ preview, html, jsx }) {
+function Code({ preview, html, jsx, next }) {
     return (
         <Tabs>
             <TabItem value="preview" label="Preview" default>
@@ -32,8 +33,11 @@ function Code({ preview, html, jsx }) {
             <TabItem value="html" label="HTML">
                 <CodeBlock language="html">{html}</CodeBlock>
             </TabItem>
-            <TabItem value="jsx" label="JSX">
+            <TabItem value="jsx" label="React JSX">
                 <CodeBlock language="jsx">{jsx}</CodeBlock>
+            </TabItem>
+            <TabItem value="next" label="Next JSX">
+                <CodeBlock language="jsx">{next}</CodeBlock>
             </TabItem>
         </Tabs>
     );
