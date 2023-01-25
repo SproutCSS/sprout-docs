@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'SproutCSS',
   tagline: 'A Tiny React Component Library',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'http://sproutcss-dejmedus.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'dejmedus', // Usually your GitHub org/user name.
+  projectName: 'sprout-docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -34,6 +34,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          sidebarCollapsed: false,
+
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -62,8 +64,13 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/dejmedus/sprout',
+            href: 'https://github.com/dejmedus/sproutcss',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://www.npmjs.com/package/sproutcss',
+            label: 'NPM',
             position: 'right',
           },
         ],
@@ -71,8 +78,8 @@ const config = {
       announcementBar: {
         id: 'greeting',
         content:
-          'Welcome to Sprout 🌱 - An open source collection of React blueprints',
-        backgroundColor: '#0009',
+          'Welcome to Sprout 🌱 - An open source collection of CSS blueprints',
+        backgroundColor: 'rgb(10, 30, 30)',
         textColor: '#fff',
         isCloseable: true,
       },
@@ -85,10 +92,14 @@ const config = {
           },
           {
             label: 'GitHub',
-            href: 'https://github.com/dejmedus/sprout',
+            href: 'https://github.com/dejmedus/sproutcss',
+          },
+          {
+            label: 'NPM',
+            href: 'https://www.npmjs.com/package/sproutcss',
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}`,
+        copyright: `Copyright © ${new Date().getFullYear()} SproutCSS`,
       },
       prism: {
         theme: lightCodeTheme,
