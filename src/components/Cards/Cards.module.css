@@ -1,0 +1,27 @@
+:root {
+  --card-primary: 2px solid black;
+  --shadow: 0.5em 0.5em rgb(69, 69, 69);
+}
+[data-theme="dark"] {
+  --card-primary: 2px solid rgb(59, 59, 59);
+  --shadow: 0.5em 0.5em rgb(58, 58, 58);
+}
+.cards {
+  display: flex;
+  margin: 0 0.4em 2em 0.4em;
+  gap: 2em;
+  justify-content: center;
+}
+.card {
+  border: var(--card-primary);
+  padding: 1em;
+  box-shadow: var(--shadow);
+  transform: translate(-6px, -6px);
+  width: 25vw;
+  min-height: 180px;
+  color: var(--card-primary);
+}
+.card:hover {
+  transform: translate(0, 0);
+  box-shadow: none;
+}

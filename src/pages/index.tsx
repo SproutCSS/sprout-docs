@@ -1,28 +1,52 @@
 import React from "react";
-import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import styles from "./index.module.css";
+import Cards from "../components/Cards/Cards";
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
-  return (
-    <Layout title={`${siteConfig.title}`} description="Notebook">
-      <HomepageHeader />
-      <main></main>
-    </Layout>
-  );
-}
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+  const cardData = [
+    {
+      path: "/heya",
+      blank: false,
+      title: "Heya,",
+      body: "Thanks for stopping by!",
+    },
+    {
+      path: "docs/intro",
+      blank: false,
+      title: "Get Started",
+      body: `Install Sprout and view the components.`,
+    },
+    {
+      path: "/changelog",
+      blank: false,
+      title: "v1.0.0",
+      body: `- A snazzy button`,
+    },
+  ];
+
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}></div>
-      </div>
-    </header>
+    <Layout
+      title={`${siteConfig.title}`}
+      description="A Tiny CSS Component Library"
+    >
+      <main>
+        <div className={styles.heroBanner}>
+          <h1>Welcome to Sprout 🌱</h1>
+          <p>An Open Source Collection of CSS Blueprints</p>
+          <div className={styles.install}>
+            <button
+              onClick={() => navigator.clipboard.writeText("npm i sproutcss")}
+            >
+              npm i sproutcss
+            </button>
+          </div>
+        </div>
+        <Cards cardData={cardData} />
+      </main>
+    </Layout>
   );
 }
