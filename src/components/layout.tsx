@@ -5,10 +5,9 @@ import CodeBlock from "@theme/CodeBlock";
 import "../css/layout.css";
 import "../css/sprout.css";
 
-export default function Layout({ title, options, preview, html, jsx }) {
+export default function Layout({ options, preview, html, jsx }) {
   return (
     <>
-      <h3>{title}</h3>
       <Options options={options} />
       <Code preview={preview} html={html} jsx={jsx} />
     </>
@@ -59,7 +58,7 @@ function Options({ options }) {
 function Class(props) {
   return (
     <button
-      className="btn"
+      className="choice-btn"
       onClick={() => navigator.clipboard.writeText(props.class)}
     >
       {props.class}
