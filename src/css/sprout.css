@@ -118,8 +118,7 @@ Badges
 .bdg.round {
   border-radius: 64px;
 }
-.bdg,
-rounded {
+.bdg.rounded {
   border-radius: 8px;
 }
 .bdg.square {
@@ -140,16 +139,28 @@ rounded {
 }
 
 .bdg.red {
+  background-color: var(--red-partial);
+  border: 1px solid var(--red);
 }
 .bdg.yellow {
+  background-color: var(--yellow-partial);
+  border: 1px solid var(--yellow);
 }
 .bdg.green {
+  background-color: var(--green-partial);
+  border: 1px solid var(--green);
 }
 .bdg.blue {
+  background-color: var(--blue-partial);
+  border: 1px solid var(--blue);
 }
 .bdg.purple {
+  background-color: var(--purple-partial);
+  border: 1px solid var(--purple);
 }
 .bdg.pink {
+  background-color: var(--pink-partial);
+  border: 1px solid var(--pink);
 }
 
 /* 
