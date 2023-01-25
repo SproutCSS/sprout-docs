@@ -3,26 +3,46 @@ import Layout from '../../src/components/layout'
 <Layout
   title="Primary Button"
   options={{
-    desc: "btn-primary <btn-size> <btn-hover>",
-    options: [{
-      name: "btn-size",
-      choices: "btn-small btn btn-md btn-lg"
-    },
-    {
-      name: "btn-hover",
-      choices: "btn-outline btn-darker btn-lighter"
-    },
+    desc: "<btn-shape> <btn-size> <btn-hover>",
+    options: [
+      {
+        name: "btn-shape",
+        choices: "btn-rounded btn-round btn-square"
+      },
+      {
+        name: "btn-size",
+        choices: "btn-small btn btn-md btn-lg"
+      },
+      {
+        name: "btn-hover",
+        choices: "btn-outline btn-darker btn-lighter"
+      },
     ]
   }}
   preview={
-    [< div className="flex" >
-      <button class="btn-primary btn-xs btn-outline" >button</button>
-      <button class="btn-primary btn-sm btn-lighter" >button</button>
-      <button class="btn-primary btn btn-darker" >button</button>
-      <button class="btn-primary btn-md btn-darker" >button</button>
-      <button class="btn-primary btn-lg btn-darker" >button</button>
-    </div >]}
-  html='<button class="btn-primary btn btn-darker" >button</button>'
-  jsx='<button className="btn-primary btn btn-darker">button</button>'
-  next='<button className={`${styles.btnPrimary} ${styles.btn} ${styles.btnDarker}`}>button</button>'
+    [<>
+      <button class="btn-rounded btn-xs btn-darker" >button</button>
+      <button class="btn-rounded btn-sm btn-darker" >button</button>
+      <button class="btn-rounded btn btn-darker" >button</button>
+      <button class="btn-rounded btn-md btn-darker" >button</button>
+      <button class="btn-rounded btn-lg btn-darker" >button</button>
+    </>,
+    <>
+      <button class="btn-round btn-xs btn-outline" >button</button>
+      <button class="btn-round btn-sm btn-outline" >button</button>
+      <button class="btn-round btn btn-outline" >button</button>
+      <button class="btn-round btn-md btn-outline" >button</button>
+      <button class="btn-round btn-lg btn-outline" >button</button>
+    </>,
+    <>
+      <button class="btn-square btn-xs btn-lighter" >button</button>
+      <button class="btn-square btn-sm btn-lighter" >button</button>
+      <button class="btn-square btn btn-lighter" >button</button>
+      <button class="btn-square btn-md btn-lighter" >button</button>
+      <button class="btn-square btn-lg btn-lighter" >button</button>
+    </>
+    ]}
+  html='<button class="btn-rounded btn btn-darker" >button</button>'
+  jsx='<button className="btn-round btn btn-outline">button</button>'
+  next='<button className={`${sprout.btnSquare} ${sprout.btn} ${sprout.btnLighter}`}>button</button>'
 />

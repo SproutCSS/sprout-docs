@@ -7,14 +7,13 @@ import '../css/sprout.css'
 
 
 export default function Layout({ title, options, preview, html, jsx, next }) {
+    console.log(preview)
     return (
         <>
             <h3>{title}</h3>
             <Options options={options} />
             <Code
-                preview={<div className="flex">
-                    {preview[0]}
-                </div>}
+                preview={preview}
                 html={html}
                 jsx={jsx}
                 next={next}
@@ -28,7 +27,11 @@ function Code({ preview, html, jsx, next }) {
     return (
         <Tabs>
             <TabItem value="preview" label="Preview" default>
-                {preview}
+                {preview.map(row => {
+                    return <div className="flex">
+                        {row}
+                    </div>
+                })}
             </TabItem>
             <TabItem value="html" label="HTML">
                 <CodeBlock language="html">{html}</CodeBlock>
@@ -51,7 +54,7 @@ function Options({ options }) {
             {options.options.map(option => {
                 return (
                     <div className="row">
-                        <h4>{option.name}: </h4>
+                        <div className='name'>{option.name}</div>
                         <div className="choices">
                             {option.choices.split(' ').map(choice => {
                                 return <Class class={choice} />

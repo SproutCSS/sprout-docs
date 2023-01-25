@@ -6,27 +6,22 @@
   padding: 0.2em 0.6em;
   background-color: rgba(132, 180, 252, 0.446);
   border-radius: 6px;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.8em;
 }
 
 .options .row {
   display: flex;
   align-items: center;
-  align-content: center;
   gap: 1em;
-  padding: 0 0.6em;
+  padding: 0.2em 0.6em;
 
   /* fix for weird styling */
   width: 100%;
   justify-self: center;
 }
-.row h4 {
+.row .name {
   font-weight: 500;
-  min-width: 100px;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
-  justify-self: center;
+  min-width: 90px;
 }
 .row .choices {
   display: flex;
@@ -40,9 +35,9 @@
   padding: 0 0.4em;
 }
 .choices .btn:hover {
-  background-color: rgb(234, 234, 234, 0.7);
+  background-color: rgb(234, 234, 234);
 }
 
 .flex * {
-  margin: 0 0.2em;
+  margin: 0.2em;
 }
