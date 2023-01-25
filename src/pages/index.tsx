@@ -3,6 +3,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import styles from "./index.module.css";
 import Cards from "../components/Cards/Cards";
+import Waves from "../assets/wave.png";
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -47,6 +48,7 @@ export default function Home(): JSX.Element {
         </div>
         <Cards cardData={cardData} />
       </main>
+      <img className={styles.waves} src={Waves} alt="wave pattern" />
     </Layout>
   );
 }
