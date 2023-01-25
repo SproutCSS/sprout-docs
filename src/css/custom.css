@@ -14,7 +14,7 @@
   --ifm-color-primary-lighter: rgb(137, 184, 255);
   --ifm-color-primary-lightest: rgb(138, 185, 255);
 
-  --ifm-footer-background-color: rgb(62, 62, 62);
+  --ifm-footer-background-color: #2c2c2c;
   --ifm-footer-color: rgb(202, 202, 202);
   --ifm-footer-link-color: var(--ifm-footer-color);
   /* --ifm-footer-title-color: var(--ifm-color-white); */
@@ -31,4 +31,8 @@
   --ifm-color-primary-lightest: rgb(138, 185, 255);
   --border: 2px solid white;
   --shadow: 0.5em 0.5em rgb(224, 224, 224);
+}
+
+img {
+  vertical-align: bottom;
 }
