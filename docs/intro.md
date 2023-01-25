@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Welcome to Sprout 🌱
+# Welcome to Sprout
 
 Sprout is an open source collection of component blueprints.
 
@@ -13,7 +13,7 @@ Sprout is an open source collection of component blueprints.
 ``` bash
   npm i sproutcss
 ```
-1. Import the stylesheet
+2. Import the stylesheet
 
 ``` css title="index.css"
 @import "./node_modules/sproutcss/sprout.css";
