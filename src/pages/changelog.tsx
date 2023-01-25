@@ -11,8 +11,21 @@ export default function Changelog(): JSX.Element {
       description="A Tiny CSS Component Library"
     >
       <main className={styles.changelogContainer}>
+        <h1>Change Log</h1>
         <div className={styles.changelog}>
-          <h1>Change Log</h1>
+          <h2>1.1.0</h2>
+          <h3>Whats Changed</h3>
+          <ul>
+            <li>Simplified styling. No more btn-lg, just lg.</li>
+            <li>Sizing syntax. Choose from xs, sm, md, lg, and xl.</li>
+          </ul>
+          <h3>Whats New</h3>
+          <ul>
+            <li>
+              <a href="/docs/Components/Inputs">Text inputs</a>
+            </li>
+          </ul>
+          <br />
           <h2>1.0.0</h2>
           <h3>Whats New</h3>
           <ul>
@@ -24,4 +37,8 @@ export default function Changelog(): JSX.Element {
       </main>
     </Layout>
   );
+}
+
+function HiLi({ text }) {
+  return <div className={styles.highlight}>{text}</div>;
 }

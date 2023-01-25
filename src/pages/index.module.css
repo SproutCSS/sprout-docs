@@ -45,14 +45,24 @@
   font-size: 4em;
 }
 .changelogContainer {
-  padding-top: 4em;
+  padding: 3.8em 0;
   display: grid;
   justify-content: center;
 }
 .changelog {
   display: flex;
   flex-direction: column;
-  width: 90vw;
+  width: 80vw;
+}
+.changelog h2 {
+  width: fit-content;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.2em;
+}
+.changelog h3,
+.changelog ul,
+ul li {
+  margin-left: 0.4em;
 }
 
 @media screen and (max-width: 996px) {
