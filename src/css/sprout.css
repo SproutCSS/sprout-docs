@@ -7,9 +7,6 @@
   --primary: rgb(107, 166, 255);
   --primary-0: rgb(131, 179, 250);
   --primary-1: rgb(67, 139, 247);
-  --secondary: #b29aff;
-  --secondary-0: #bca9fc;
-  --secondary-1: #a186fb;
 
   --padding-xs: 0.4em 0.8em;
   --padding-sm: 0.6em 1em;
@@ -18,26 +15,21 @@
   --padding-lg: 0.4em 2em;
 }
 
-.btn-round,
-.btnRound {
+.btn-round {
   border-radius: 64px;
   border: 1px solid var(--primary);
   background-color: var(--primary);
   color: var(--light);
   font-weight: 600;
 }
-
-.btn-rounded,
-.btnRounded {
+.btn-rounded {
   border-radius: 8px;
   border: 1px solid var(--primary);
   background-color: var(--primary);
   color: var(--light);
   font-weight: 600;
 }
-
-.btn-square,
-.btnSquare {
+.btn-square {
   border-radius: 2px;
   border: 1px solid var(--primary);
   background-color: var(--primary);
@@ -45,13 +37,11 @@
   font-weight: 600;
 }
 
-.btn-xs,
-.btnXs {
+.btn-xs {
   padding: var(--padding-xs);
   font-size: x-small;
 }
-.btn-sm,
-.btnSm {
+.btn-sm {
   padding: var(--padding-sm);
   font-size: small;
 }
@@ -59,31 +49,25 @@
   padding: var(--padding);
   font-size: medium;
 }
-.btn-md,
-.btnMd {
+.btn-md {
   padding: var(--padding-md);
   font-size: large;
 }
-.btn-lg,
-.btnLg {
+.btn-lg {
   padding: var(--padding-lg);
   font-size: x-large;
 }
 
-.btn-outline:hover,
-.btnOutline:hover {
+.btn-outline:hover {
   border: 1px solid var(--primary);
   background-color: var(--light);
   color: var(--primary);
 }
-
-.btn-darker:hover,
-.btnDarker:hover {
+.btn-darker:hover {
   border: 1px solid var(--primary-1);
   background-color: var(--primary-1);
 }
-.btn-lighter:hover,
-.btnLighter:hover {
+.btn-lighter:hover {
   border: 1px solid var(--primary-0);
   background-color: var(--primary-0);
 }
