@@ -1,10 +1,21 @@
+:root {
+  --choice: rgb(234, 234, 234, 0.5);
+  --choice-border: rgb(234, 234, 234);
+  --choice-hover: rgb(238, 238, 238);
+}
+[data-theme="dark"] {
+  --choice: rgb(55, 55, 55);
+  --choice-border: rgb(45, 45, 45);
+  --choice-hover: rgb(69, 69, 69);
+}
+
 .options {
   display: grid;
 }
 .options .class {
   font-weight: 700;
   padding: 0.2em 0.6em;
-  background-color: rgba(132, 180, 252, 0.446);
+  background-color: rgba(132, 180, 252, 0.4);
   border-radius: 6px;
   margin-bottom: 0.8em;
 }
@@ -28,14 +39,14 @@
   gap: 0.4em;
 }
 .choices .btn {
-  border: 1px solid rgb(234, 234, 234);
-  border-radius: 4px;
-  background-color: rgb(234, 234, 234, 0.5);
+  border: 1px solid var(--btn-border);
+  border-radius: 6px;
+  background-color: var(--choice);
   height: 2em;
   padding: 0 0.4em;
 }
 .choices .btn:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: var(--choice-hover);
 }
 
 .flex * {
