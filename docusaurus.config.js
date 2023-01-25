@@ -99,7 +99,6 @@ const config = {
             href: 'https://www.npmjs.com/package/sproutcss',
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} SproutCSS`,
       },
       prism: {
         theme: lightCodeTheme,
