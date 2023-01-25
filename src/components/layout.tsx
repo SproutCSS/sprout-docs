@@ -36,7 +36,9 @@ function Code({ preview, html, jsx }) {
 function Options({ options }) {
   return (
     <div className="options">
-      <div className="class">{options.desc}</div>
+      {options.desc !== null ? (
+        <div className="class">{options.desc}</div>
+      ) : null}
       {options.options.map((option) => {
         return (
           <div className="row">
