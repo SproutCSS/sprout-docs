@@ -1,0 +1,88 @@
+import Layout from "../../src/components/layout";
+
+### Text Badge
+
+<Layout
+  options={{
+    desc: "bdg <bdg-color> <bdg-shape> <bdg-size>",
+    options: [
+      {
+        name: "bdg-color",
+        choices:
+          "bdg-red bdg-orange bdg-yellow bdg-green bdg-blue bdg-purple bdg-pink",
+      },
+      {
+        name: "bdg-shape",
+        choices: "bdg-rounded bdg-round bdg-square",
+      },
+      {
+        name: "bdg-size",
+        choices: "bdg-sm bdg-md bdg-lg",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <div class="bdg-rounded bdg-sm">
+        div
+      </div>
+      <div class="bdg bdg-rounded bdg">div</div>
+      <div class="bdg bdg-rounded bdg-lg">div</div>
+    </>,
+    <>
+      <div class="bdg bdg-round bdg-sm">div</div>
+      <div class="bdg bdg-round bdg-md">div</div>
+      <div class="bdg bdg-round bdg-lg">div</div>
+    </>,
+    <>
+      <div class="bdg bdg-square bdg-sm">div</div>
+      <div class="bdg bdg-square bdg-md">div</div>
+      <div class="bdg bdg-square bdg-lg">div</div>
+    </>,
+
+]}
+html='<div class="bdg bdg-rounded bdg-md">div</div>'
+jsx='<div className="bdg bdg-round bdg-md">div</div>'
+/>
+
+### Icon Badge
+
+<Layout
+  options={{
+    desc: "bdg <bdg-color> <bdg-shape> <bdg-size>",
+    options: [
+      {
+        name: "bdg-color",
+        choices:
+          "bdg-red bdg-orange bdg-yellow bdg-green bdg-blue bdg-purple bdg-pink",
+      },
+      {
+        name: "bdg-shape",
+        choices: "bdg-rounded bdg-round bdg-square",
+      },
+      {
+        name: "bdg-size",
+        choices: "bdg-sm bdg-md bdg-lg",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <div class="bdg-rounded bdg-sm">div</div>
+      <div class="bdg bdg-rounded bdg">div</div>
+      <div class="bdg bdg-rounded bdg-lg">div</div>
+    </>,
+    <>
+      <div class="bdg bdg-round bdg-sm">div</div>
+      <div class="bdg bdg-round bdg-md">div</div>
+      <div class="bdg bdg-round bdg-lg">div</div>
+    </>,
+    <>
+      <div class="bdg bdg-square bdg-sm">div</div>
+      <div class="bdg bdg-square bdg-md">div</div>
+      <div class="bdg bdg-square bdg-lg">div</div>
+    </>,
+  ]}
+  html='<div class="bdg bdg-rounded bdg-md">div</div>'
+  jsx='<div className="bdg bdg-round bdg-md">div</div>'
+/>

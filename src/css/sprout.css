@@ -5,8 +5,44 @@
   --darkGrey: rgb(93, 93, 93);
 
   --primary: rgb(107, 166, 255);
-  --primary-0: rgb(131, 179, 250);
-  --primary-1: rgb(67, 139, 247);
+  --primary-partial: rgb(107, 166, 255, 0.5);
+  --primary-light: rgb(131, 179, 250);
+  --primary-dark: rgb(67, 139, 247);
+
+  --red: rgb(255, 107, 107);
+  --red-partial: rgb(255, 107, 107, 0.5);
+  --red-light: rgb(250, 131, 131);
+  --red-dark: rgb(247, 67, 67);
+
+  --orange: rgb(255, 179, 107);
+  --orange-partial: rgb(255, 179, 107, 0.5);
+  --orange-light: rgb(250, 198, 131);
+  --orange-dark: rgb(247, 154, 67);
+
+  --yellow: rgb(255, 250, 107);
+  --yellow-partial: rgb(255, 250, 107, 0.5);
+  --yellow-light: rgb(250, 238, 131);
+  --yellow-dark: rgb(247, 238, 67);
+
+  --green: rgb(169, 255, 107);
+  --green-partial: rgb(169, 255, 107, 0.5);
+  --green-light: rgb(179, 250, 131);
+  --green-dark: rgb(136, 247, 67);
+
+  --blue: rgb(107, 196, 255);
+  --blue-partial: rgb(107, 196, 255, 0.5);
+  --blue-light: rgb(131, 204, 250);
+  --blue-dark: rgb(67, 181, 247);
+
+  --purple: rgb(159, 107, 255);
+  --purple-partial: rgb(159, 107, 255, 0.5);
+  --purple-light: rgb(159, 131, 250);
+  --purple-dark: rgb(136, 67, 247);
+
+  --pink: rgb(255, 107, 191);
+  --pink-partial: rgba(255, 107, 216, 0.5);
+  --pink-light: rgb(250, 131, 202);
+  --pink-dark: rgb(247, 67, 190);
 
   --padding-xs: 0.4em 0.8em;
   --padding-sm: 0.6em 1em;
@@ -15,59 +51,107 @@
   --padding-lg: 0.4em 2em;
 }
 
-.btn-round {
-  border-radius: 64px;
-  border: 1px solid var(--primary);
-  background-color: var(--primary);
-  color: var(--light);
-  font-weight: 600;
-}
-.btn-rounded {
-  border-radius: 8px;
-  border: 1px solid var(--primary);
-  background-color: var(--primary);
-  color: var(--light);
-  font-weight: 600;
-}
-.btn-square {
-  border-radius: 2px;
+/* 
+Buttons
+-------------------------- */
+.btn {
   border: 1px solid var(--primary);
   background-color: var(--primary);
   color: var(--light);
   font-weight: 600;
 }
 
+/* btn-shape */
+.btn-round {
+  border-radius: 64px;
+}
+.btn-rounded {
+  border-radius: 8px;
+}
+.btn-square {
+  border-radius: 2px;
+}
+
+/* btn-size */
 .btn-xs {
-  padding: var(--padding-xs);
+  padding: var(--padding-sm);
   font-size: x-small;
 }
 .btn-sm {
   padding: var(--padding-sm);
   font-size: small;
 }
-.btn {
+.btn-md {
   padding: var(--padding);
   font-size: medium;
 }
-.btn-md {
+.btn-lg {
   padding: var(--padding-md);
   font-size: large;
 }
-.btn-lg {
+.btn-xl {
   padding: var(--padding-lg);
   font-size: x-large;
 }
 
+/* btn-hover */
 .btn-outline:hover {
   border: 1px solid var(--primary);
   background-color: var(--light);
   color: var(--primary);
 }
 .btn-darker:hover {
-  border: 1px solid var(--primary-1);
-  background-color: var(--primary-1);
+  border: 1px solid var(--primary-dark);
+  background-color: var(--primary-dark);
 }
 .btn-lighter:hover {
-  border: 1px solid var(--primary-0);
-  background-color: var(--primary-0);
+  border: 1px solid var(--primary-light);
+  background-color: var(--primary-light);
+}
+
+/* 
+Badges
+-------------------------- */
+.bdg {
+  color: var(--light);
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+}
+
+.bdg-round {
+  border-radius: 64px;
+}
+.bdg-rounded {
+  border-radius: 8px;
+}
+.bdg-square {
+  border-radius: 2px;
+}
+
+.bdg-sm {
+  padding: var(--padding-xs);
+  font-size: xx-small;
+}
+.bdg-md {
+  padding: var(--padding-sm);
+  font-size: x-small;
+}
+.bdg-lg {
+  padding: var(--padding);
+  font-size: small;
+}
+
+.bdg-red {
+}
+.bdg-pink {
+}
+.bdg-yellow {
+}
+.bdg-green {
+}
+.bdg-blue {
+}
+.bdg-purple {
+}
+.bdg-pink {
 }
