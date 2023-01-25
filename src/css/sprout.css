@@ -1,6 +1,6 @@
 :root {
   --light: #f8f8f8;
-  --lightGrey: rgb(202, 202, 202);
+  --lightGrey: rgb(212, 212, 212);
   --dark: rgb(62, 62, 62);
   --darkGrey: rgb(93, 93, 93);
 
@@ -61,50 +61,47 @@ Buttons
   font-weight: 600;
 }
 
-/* btn-shape */
-.btn-round {
+.btn.round {
   border-radius: 64px;
 }
-.btn-rounded {
+.btn.rounded {
   border-radius: 8px;
 }
-.btn-square {
+.btn.square {
   border-radius: 2px;
 }
 
-/* btn-size */
-.btn-xs {
+.btn.xs {
   padding: var(--padding-sm);
   font-size: x-small;
 }
-.btn-sm {
+.btn.sm {
   padding: var(--padding-sm);
   font-size: small;
 }
-.btn-md {
+.btn.md {
   padding: var(--padding);
   font-size: medium;
 }
-.btn-lg {
+.btn.lg {
   padding: var(--padding-md);
   font-size: large;
 }
-.btn-xl {
+.btn.xl {
   padding: var(--padding-lg);
   font-size: x-large;
 }
 
-/* btn-hover */
-.btn-outline:hover {
+.btn.outline:hover {
   border: 1px solid var(--primary);
   background-color: var(--light);
   color: var(--primary);
 }
-.btn-darker:hover {
+.btn.darker:hover {
   border: 1px solid var(--primary-dark);
   background-color: var(--primary-dark);
 }
-.btn-lighter:hover {
+.btn.lighter:hover {
   border: 1px solid var(--primary-light);
   background-color: var(--primary-light);
 }
@@ -118,40 +115,66 @@ Badges
   background-color: var(--primary);
 }
 
-.bdg-round {
+.bdg.round {
   border-radius: 64px;
 }
-.bdg-rounded {
+.bdg,
+rounded {
   border-radius: 8px;
 }
-.bdg-square {
+.bdg.square {
   border-radius: 2px;
 }
 
-.bdg-sm {
+.bdg.sm {
   padding: var(--padding-xs);
   font-size: xx-small;
 }
-.bdg-md {
+.bdg.md {
   padding: var(--padding-sm);
   font-size: x-small;
 }
-.bdg-lg {
+.bdg.lg {
   padding: var(--padding);
   font-size: small;
 }
 
-.bdg-red {
+.bdg.red {
 }
-.bdg-pink {
+.bdg.yellow {
 }
-.bdg-yellow {
+.bdg.green {
 }
-.bdg-green {
+.bdg.blue {
 }
-.bdg-blue {
+.bdg.purple {
 }
-.bdg-purple {
+.bdg.pink {
 }
-.bdg-pink {
+
+/* 
+Inputs
+-------------------------- */
+.text-i {
+  border: 1px solid var(--lightGrey);
+}
+
+.text-i.sqaure {
+  border-radius: 2px;
+}
+.text-i.rounded {
+  border-radius: 8px;
+}
+
+.text-i.sm {
+  padding: var(--padding-xs);
+  font-size: small;
+}
+.text-i.md {
+  padding: var(--padding-xs);
+  font-size: medium;
+}
+.text-i.lg {
+  padding: var(--padding-xs);
+  font-size: large;
 }

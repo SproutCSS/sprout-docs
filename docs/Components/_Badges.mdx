@@ -1,0 +1,84 @@
+import Layout from "../../src/components/layout";
+
+### Text Badge
+
+<Layout
+  options={{
+    desc: "bdg <color> <shape> <size>",
+    options: [
+      {
+        name: "color",
+        choices:
+          "red orange yellow green blue purple pink",
+      },
+      {
+        name: "shape",
+        choices: "rounded round square",
+      },
+      {
+        name: "size",
+        choices: "sm md lg",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <div class="rounded sm">Badge</div>
+      <div class="bdg rounded md">Badge</div>
+      <div class="bdg rounded lg">Badge</div>
+    </>,
+    <>
+      <div class="bdg round sm">Badge</div>
+      <div class="bdg round md">Badge</div>
+      <div class="bdg round lg">Badge</div>
+    </>,
+    <>
+      <div class="bdg square sm">Badge</div>
+      <div class="bdg square md">Badge</div>
+      <div class="bdg square lg">Badge</div>
+    </>,
+
+]}
+html='<div class="bdg rounded md">Badge</div>'
+jsx='<div className="bdg round md">Badge</div>' />
+
+### Icon Badge
+
+<Layout
+  options={{
+    desc: "bdg <color> <shape> <size>",
+    options: [
+      {
+        name: "color",
+        choices: "red orange yellow green blue purple pink",
+      },
+      {
+        name: "shape",
+        choices: "rounded round square",
+      },
+      {
+        name: "size",
+        choices: "sm md lg",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <div class="rounded sm">Badge</div>
+      <div class="bdg rounded md">Badge</div>
+      <div class="bdg rounded lg">Badge</div>
+    </>,
+    <>
+      <div class="bdg round sm">Badge</div>
+      <div class="bdg round md">Badge</div>
+      <div class="bdg round lg">Badge</div>
+    </>,
+    <>
+      <div class="bdg square sm">Badge</div>
+      <div class="bdg square md">Badge</div>
+      <div class="bdg square lg">Badge</div>
+    </>,
+  ]}
+  html='<div class="bdg rounded md">Badge</div>'
+  jsx='<div className="bdg round md">Badge</div>'
+/>
