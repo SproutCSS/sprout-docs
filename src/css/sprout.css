@@ -5,13 +5,11 @@
   --darkGrey: rgb(93, 93, 93);
 
   --primary: rgb(107, 166, 255);
-  --primary-0: rgb(127, 178, 255);
+  --primary-0: rgb(131, 179, 250);
   --primary-1: rgb(67, 139, 247);
   --secondary: #b29aff;
   --secondary-0: #bca9fc;
   --secondary-1: #a186fb;
-
-  --btn-border-radius: 6px;
 
   --padding-xs: 0.4em 0.8em;
   --padding-sm: 0.6em 1em;
@@ -20,9 +18,27 @@
   --padding-lg: 0.4em 2em;
 }
 
-.btnPrimary,
-.btn-primary {
-  border-radius: var(--btn-border-radius);
+.btn-round,
+.btnRound {
+  border-radius: 64px;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--light);
+  font-weight: 600;
+}
+
+.btn-rounded,
+.btnRounded {
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--light);
+  font-weight: 600;
+}
+
+.btn-square,
+.btnSquare {
+  border-radius: 2px;
   border: 1px solid var(--primary);
   background-color: var(--primary);
   color: var(--light);
