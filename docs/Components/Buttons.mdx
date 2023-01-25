@@ -1,9 +1,10 @@
 import Layout from "../../src/components/layout";
 
+### Primary Button
+
 <Layout
-  title="Primary Button"
   options={{
-    desc: null,
+    desc: "btn <btn-shape> <btn-size> <btn-hover>",
     options: [
       {
         name: "btn-shape",
@@ -11,7 +12,7 @@ import Layout from "../../src/components/layout";
       },
       {
         name: "btn-size",
-        choices: "btn-xs btn-sm btn btn-md btn-lg",
+        choices: "btn-xs btn-sm btn-md btn-lg btn-xl",
       },
       {
         name: "btn-hover",
@@ -21,27 +22,27 @@ import Layout from "../../src/components/layout";
   }}
   preview={[
     <>
-      <button class="btn-rounded btn-xs btn-darker">button</button>
-      <button class="btn-rounded btn-sm btn-darker">button</button>
-      <button class="btn-rounded btn btn-darker">button</button>
-      <button class="btn-rounded btn-md btn-darker">button</button>
-      <button class="btn-rounded btn-lg btn-darker">button</button>
+      <button class="btn btn-rounded btn-xs btn-darker">button</button>
+      <button class="btn btn-rounded btn-sm btn-darker">button</button>
+      <button class="btn btn-rounded btn-md btn-darker">button</button>
+      <button class="btn btn-rounded btn-lg btn-darker">button</button>
+      <button class="btn btn-rounded btn-xl btn-darker">button</button>
     </>,
     <>
-      <button class="btn-round btn-xs btn-outline">button</button>
-      <button class="btn-round btn-sm btn-outline">button</button>
-      <button class="btn-round btn btn-outline">button</button>
-      <button class="btn-round btn-md btn-outline">button</button>
-      <button class="btn-round btn-lg btn-outline">button</button>
+      <button class="btn btn-round btn-xs btn-outline">button</button>
+      <button class="btn btn-round btn-sm btn-outline">button</button>
+      <button class="btn btn-round btn-md btn-outline">button</button>
+      <button class="btn btn-round btn-lg btn-outline">button</button>
+      <button class="btn btn-round btn-xl btn-outline">button</button>
     </>,
     <>
-      <button class="btn-square btn-xs btn-lighter">button</button>
-      <button class="btn-square btn-sm btn-lighter">button</button>
-      <button class="btn-square btn btn-lighter">button</button>
-      <button class="btn-square btn-md btn-lighter">button</button>
-      <button class="btn-square btn-lg btn-lighter">button</button>
+      <button class="btn btn-square btn-xs btn-lighter">button</button>
+      <button class="btn btn-square btn-sm btn-lighter">button</button>
+      <button class="btn btn-square btn-md btn-lighter">button</button>
+      <button class="btn btn-square btn-lg btn-lighter">button</button>
+      <button class="btn btn-square btn-xl btn-lighter">button</button>
     </>,
   ]}
-  html='<button class="btn-rounded btn btn-darker" >button</button>'
-  jsx='<button className="btn-round btn btn-outline">button</button>'
+  html='<button class="btn btn-rounded btn-md btn-darker" >button</button>'
+  jsx='<button className="btn btn-round btn-md btn-outline">button</button>'
 />
