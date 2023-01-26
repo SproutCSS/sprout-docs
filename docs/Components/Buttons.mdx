@@ -43,6 +43,53 @@ import Layout from "../../src/components/Layout/layout";
       <button class="btn square xl lighter">button</button>
     </>,
   ]}
-  html='<button class="btn rounded md darker" >button</button>'
+  html='<button class="btn rounded md darker">button</button>'
   jsx='<button className="btn round md outline">button</button>'
+/>
+
+### Shadow Button
+
+<Layout
+  options={{
+    desc: "shdw-btn <shape> <size> <hover>",
+    options: [
+      {
+        name: "shape",
+        choices: "rounded round square",
+      },
+      {
+        name: "size",
+        choices: "xs sm md lg xl",
+      },
+      {
+        name: "hover",
+        choices: "darker lighter translate",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <button class="shdw-btn rounded xs darker">button</button>
+      <button class="shdw-btn rounded sm darker">button</button>
+      <button class="shdw-btn rounded md darker">button</button>
+      <button class="shdw-btn rounded lg darker">button</button>
+      <button class="shdw-btn rounded xl darker">button</button>
+    </>,
+    <>
+      <button class="shdw-btn round xs translate">button</button>
+      <button class="shdw-btn round sm translate">button</button>
+      <button class="shdw-btn round md translate">button</button>
+      <button class="shdw-btn round lg translate">button</button>
+      <button class="shdw-btn round xl translate">button</button>
+    </>,
+    <>
+      <button class="shdw-btn square xs lighter">button</button>
+      <button class="shdw-btn square sm lighter">button</button>
+      <button class="shdw-btn square md lighter">button</button>
+      <button class="shdw-btn square lg lighter">button</button>
+      <button class="shdw-btn square xl lighter">button</button>
+    </>,
+  ]}
+  html='<button class="shdw-btn rounded md">button</button>'
+  jsx='<button className="shdw-btn round md">button</button>'
 />
