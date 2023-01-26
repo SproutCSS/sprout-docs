@@ -24,8 +24,8 @@ export default function Home(): JSX.Element {
     {
       path: "/changelog",
       blank: false,
-      title: "v1.1.0",
-      body: `- Improved styling syntax`,
+      title: "v1.2.0",
+      body: `- Better component darkmode styling`,
     },
   ];
 
