@@ -166,26 +166,111 @@ Badges
 /* 
 Inputs
 -------------------------- */
-.text-i {
+/* txt Input */
+.txt-i {
   border: 1px solid var(--lightGrey);
 }
 
-.text-i.sqaure {
+.txt-i.sqaure {
   border-radius: 2px;
 }
-.text-i.rounded {
+.txt-i.rounded {
   border-radius: 8px;
 }
 
-.text-i.sm {
+.txt-i.sm {
   padding: var(--padding-xs);
   font-size: small;
 }
-.text-i.md {
+.txt-i.md {
   padding: var(--padding-xs);
   font-size: medium;
 }
-.text-i.lg {
+.txt-i.lg {
   padding: var(--padding-xs);
   font-size: large;
+}
+
+/* Number Input */
+.nmbr-i {
+  border: 1px solid var(--lightGrey);
+}
+.nmbr-i.sqaure {
+  border-radius: 2px;
+}
+.nmbr-i.rounded {
+  border-radius: 6px;
+}
+
+.nmbr-i.sm {
+  padding: var(--padding-xs);
+  font-size: small;
+}
+.nmbr-i.md {
+  padding: var(--padding-xs);
+  font-size: medium;
+}
+.nmbr-i.lg {
+  padding: var(--padding-xs);
+  font-size: large;
+}
+
+.nmbr-i.sm.one {
+  width: 55px;
+}
+.nmbr-i.md.one {
+  width: 60px;
+}
+.nmbr-i.lg.one {
+  width: 67px;
+}
+
+.nmbr-i.sm.two {
+  width: 60px;
+}
+.nmbr-i.md.two {
+  width: 65px;
+}
+.nmbr-i.lg.two {
+  width: 72px;
+}
+
+.nmbr-i.sm.three {
+  width: 65px;
+}
+.nmbr-i.md.three {
+  width: 75px;
+}
+.nmbr-i.lg.three {
+  width: 82px;
+}
+
+.nmbr-i.sm.four {
+  width: 70px;
+}
+.nmbr-i.md.four {
+  width: 85px;
+}
+.nmbr-i.lg.four {
+  width: 92px;
+}
+
+.nmbr-i.sm.five {
+  width: 78px;
+}
+.nmbr-i.md.five {
+  width: 94px;
+}
+.nmbr-i.lg.five {
+  width: 104px;
+}
+
+.nmbr-i.sm.six {
+  width: 85px;
+}
+.nmbr-i.md.six {
+  width: 102px;
+}
+.nmbr-i.lg.six {
+  width: 114px;
 }

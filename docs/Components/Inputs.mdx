@@ -4,7 +4,7 @@ import Layout from "../../src/components/Layout/layout";
 
 <Layout
   options={{
-    desc: "text-i <shape> <size>",
+    desc: "txt-i <shape> <size>",
     options: [
       {
         name: "shape",
@@ -17,13 +17,87 @@ import Layout from "../../src/components/Layout/layout";
     ],
   }}
   preview={[
-    <input className="text-i square sm" type="text" />,
-    <input className="text-i square md" type="text" />,
-    <input className="text-i square lg" type="text" />,
-    <input className="text-i rounded sm" type="text" />,
-    <input className="text-i rounded md" type="text" />,
-    <input className="text-i rounded lg" type="text" />,
+    <input className="txt-i square sm" type="text" />,
+    <input className="txt-i square md" type="text" />,
+    <input className="txt-i square lg" type="text" />,
+    <input className="txt-i rounded sm" type="text" />,
+    <input className="txt-i rounded md" type="text" />,
+    <input className="txt-i rounded lg" type="text" />,
   ]}
-  html='<input className="text-i square md" type="text" />'
-  jsx='<input className="text-i rounded md" type="text" />'
+  html='<input className="txt-i square md" type="text" />'
+  jsx='<input className="txt-i rounded md" type="text" />'
+/>
+
+### Number Input
+
+<Layout
+  options={{
+    desc: "nmbr-i <shape> <size> <length>",
+    options: [
+      {
+        name: "shape",
+        choices: "rounded square",
+      },
+      {
+        name: "size",
+        choices: "sm md lg",
+      },
+      {
+        name: "length",
+        choices: "one two three four five six",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <input className="nmbr-i one square sm" type="number" />
+      <input className="nmbr-i one square md" type="number" />
+      <input className="nmbr-i one square lg" type="number" />
+      <input className="nmbr-i one rounded sm" type="number" />
+      <input className="nmbr-i one rounded md" type="number" />
+      <input className="nmbr-i one rounded lg" type="number" />
+    </>,
+    <>
+      <input className="nmbr-i two square sm" type="number" />
+      <input className="nmbr-i two square md" type="number" />
+      <input className="nmbr-i two square lg" type="number" />
+      <input className="nmbr-i two rounded sm" type="number" />
+      <input className="nmbr-i two rounded md" type="number" />
+      <input className="nmbr-i two rounded lg" type="number" />
+    </>,
+    <>
+      <input className="nmbr-i three square sm" type="number" />
+      <input className="nmbr-i three square md" type="number" />
+      <input className="nmbr-i three square lg" type="number" />
+      <input className="nmbr-i three rounded sm" type="number" />
+      <input className="nmbr-i three rounded md" type="number" />
+      <input className="nmbr-i three rounded lg" type="number" />
+    </>,
+    <>
+      <input className="nmbr-i four square sm" type="number" />
+      <input className="nmbr-i four square md" type="number" />
+      <input className="nmbr-i four square lg" type="number" />
+      <input className="nmbr-i four rounded sm" type="number" />
+      <input className="nmbr-i four rounded md" type="number" />
+      <input className="nmbr-i four rounded lg" type="number" />
+    </>,
+    <>
+      <input className="nmbr-i five square sm" type="number" />
+      <input className="nmbr-i five square md" type="number" />
+      <input className="nmbr-i five square lg" type="number" />
+      <input className="nmbr-i five rounded sm" type="number" />
+      <input className="nmbr-i five rounded md" type="number" />
+      <input className="nmbr-i five rounded lg" type="number" />
+    </>,
+    <>
+      <input className="nmbr-i six square sm" type="number" />
+      <input className="nmbr-i six square md" type="number" />
+      <input className="nmbr-i six square lg" type="number" />
+      <input className="nmbr-i six rounded sm" type="number" />
+      <input className="nmbr-i six rounded md" type="number" />
+      <input className="nmbr-i six rounded lg" type="number" />
+    </>,
+  ]}
+  html='<input className="nmbr-i one square md" type="number" />'
+  jsx='<input className="nmbr-i two rounded md" type="number" />'
 />
