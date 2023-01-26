@@ -75,14 +75,6 @@ const config = {
           },
         ],
       },
-      announcementBar: {
-        id: 'greeting',
-        content:
-          'Welcome to Sprout 🌱 - An open source collection of CSS blueprints',
-        backgroundColor: 'rgb(10, 30, 30)',
-        textColor: '#fff',
-        isCloseable: true,
-      },
       footer: {
         links: [
 
