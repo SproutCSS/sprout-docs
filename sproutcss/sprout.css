@@ -9,7 +9,7 @@
 
   --primary: rgb(107, 166, 255);
   --primary-partial: rgb(107, 166, 255, 0.5);
-  --primary-light: rgb(130, 180, 255);
+  --primary-light: rgb(139, 186, 255);
   --primary-dark: rgb(67, 139, 247);
 
   --red: rgb(255, 107, 107);
@@ -22,13 +22,13 @@
   --orange-light: rgb(250, 198, 131);
   --orange-dark: rgb(247, 154, 67);
 
-  --yellow: rgb(255, 250, 107);
-  --yellow-partial: rgb(255, 250, 107, 0.5);
-  --yellow-light: rgb(250, 238, 131);
-  --yellow-dark: rgb(247, 238, 67);
+  --yellow: rgb(255, 230, 0);
+  --yellow-partial: rgb(255, 251, 0, 0.5);
+  --yellow-light: rgb(255, 253, 112);
+  --yellow-dark: rgb(255, 243, 75);
 
   --green: rgb(169, 255, 107);
-  --green-partial: rgb(169, 255, 107, 0.5);
+  --green-partial: rgba(186, 255, 136, 0.5);
   --green-light: rgb(179, 250, 131);
   --green-dark: rgb(136, 247, 67);
 
@@ -42,10 +42,10 @@
   --purple-light: rgb(159, 131, 250);
   --purple-dark: rgb(136, 67, 247);
 
-  --pink: rgb(255, 107, 191);
-  --pink-partial: rgba(255, 107, 216, 0.5);
-  --pink-light: rgb(250, 131, 202);
-  --pink-dark: rgb(247, 67, 190);
+  --pink: rgb(255, 128, 200);
+  --pink-partial: rgba(255, 119, 196, 0.5);
+  --pink-light: rgb(255, 146, 208);
+  --pink-dark: rgb(255, 81, 200);
 
   --padding-xs: 0.4em 0.8em;
   --padding-sm: 0.6em 1em;
@@ -120,7 +120,6 @@ Buttons
 }
 
 /* Shadow Button */
-
 .shdw-btn {
   border: 1px solid var(--primary);
   color: var(--primary);
@@ -181,6 +180,143 @@ Buttons
   box-shadow: none;
 }
 
+/* Icon Button */
+.icn-btn {
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 700;
+  padding: 0.4em 0.6em;
+  text-align: center;
+}
+
+.icn-btn.red {
+  background-color: var(--red-partial);
+  border-color: var(--red);
+  color: var(--red);
+}
+.icn-btn.red.darker:hover {
+  background-color: var(--red);
+  border-color: var(--red-dark);
+  color: var(--red-dark);
+}
+.icn-btn.orange {
+  background-color: var(--orange-partial);
+  border-color: var(--orange);
+  color: var(--orange);
+}
+.icn-btn.orange.darker:hover {
+  background-color: var(--orange);
+  border-color: var(--orange-dark);
+  color: var(--orange-dark);
+}
+.icn-btn.yellow {
+  background-color: var(--yellow-partial);
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+.icn-btn.yellow.darker:hover {
+  background-color: var(--yellow);
+  border-color: var(--yellow-dark);
+  color: var(--yellow-dark);
+}
+.icn-btn.green {
+  background-color: var(--green-partial);
+  border-color: var(--green);
+  color: var(--green);
+}
+.icn-btn.green.darker:hover {
+  background-color: var(--green);
+  border-color: var(--green-dark);
+  color: var(--green-dark);
+}
+.icn-btn.blue {
+  background-color: var(--blue-partial);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.icn-btn.blue.darker:hover {
+  background-color: var(--blue);
+  border-color: var(--blue-dark);
+  color: var(--blue-dark);
+}
+.icn-btn.purple {
+  background-color: var(--purple-partial);
+  border-color: var(--purple);
+  color: var(--purple);
+}
+.icn-btn.purple.darker:hover {
+  background-color: var(--purple);
+  border-color: var(--purple-dark);
+  color: var(--purple-dark);
+}
+.icn-btn.pink {
+  background-color: var(--pink-partial);
+  border-color: var(--pink);
+  color: var(--pink);
+}
+.icn-btn.pink.darker:hover {
+  background-color: var(--pink);
+  border-color: var(--pink-dark);
+  color: var(--pink-dark);
+}
+
+.icn-btn.lighter:hover {
+  opacity: 70%;
+}
+.icn-btn.outline:hover {
+  background-color: var(--secondary-color);
+}
+.icn-btn.translate:hover {
+  transform: translate(-0.4px, -0.4px);
+  box-shadow: 0.1em 0.1em;
+}
+
+.icn-btn.round {
+  border-radius: 64px;
+}
+.icn-btn.rounded {
+  border-radius: 8px;
+}
+.icn-btn.square {
+  border-radius: 2px;
+}
+
+.icn-btn.xs {
+  font-size: x-small;
+}
+.icn-btn.xs svg {
+  width: 0.6em;
+  height: auto;
+}
+.icn-btn.sm {
+  font-size: small;
+}
+.icn-btn.sm svg {
+  width: 0.8em;
+  height: auto;
+}
+.icn-btn.md {
+  font-size: medium;
+}
+.icn-btn.md svg {
+  width: 1em;
+  height: auto;
+}
+.icn-btn.lg {
+  font-size: large;
+}
+.icn-btn.lg svg {
+  width: 1.2em;
+  height: auto;
+}
+.icn-btn.xl {
+  font-size: x-large;
+}
+.icn-btn.xl svg {
+  width: 1.4em;
+  height: auto;
+}
+
 /* 
 Badges
 -------------------------- */
@@ -216,6 +352,10 @@ Badges
 .bdg.red {
   background-color: var(--red-partial);
   border: 1px solid var(--red);
+}
+.bdg.orange {
+  background-color: var(--orange-partial);
+  border: 1px solid var(--orange);
 }
 .bdg.yellow {
   background-color: var(--yellow-partial);
