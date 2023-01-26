@@ -140,32 +140,32 @@ Buttons
 .shdw-btn.xs {
   padding: var(--padding-sm);
   font-size: x-small;
-  transform: translate(-0.5px, -0.5px);
-  box-shadow: 0.15em 0.15em;
+  transform: translate(-0.4px, -0.4px);
+  box-shadow: 0.1em 0.1em;
 }
 .shdw-btn.sm {
   padding: var(--padding-sm);
   font-size: small;
-  transform: translate(-0.6px, -0.6px);
-  box-shadow: 0.2em 0.2em;
+  transform: translate(-0.45px, -0.45px);
+  box-shadow: 0.11em 0.11em;
 }
 .shdw-btn.md {
   padding: var(--padding);
   font-size: medium;
-  transform: translate(-0.7px, -0.7px);
-  box-shadow: 0.25em 0.25em;
+  transform: translate(-0.5px, -0.5px);
+  box-shadow: 0.12em 0.12em;
 }
 .shdw-btn.lg {
   padding: var(--padding-md);
   font-size: large;
-  transform: translate(-0.8px, -0.8px);
-  box-shadow: 0.25em 0.25em;
+  transform: translate(-0.55px, -0.55px);
+  box-shadow: 0.13em 0.13em;
 }
 .shdw-btn.xl {
   padding: var(--padding-lg);
   font-size: x-large;
-  transform: translate(-0.9px, -0.9px);
-  box-shadow: 0.28em 0.28em;
+  transform: translate(-0.6px, -0.6px);
+  box-shadow: 0.14em 0.14em;
 }
 
 .shdw-btn.darker:hover {
