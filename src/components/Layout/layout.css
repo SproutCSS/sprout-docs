@@ -2,21 +2,24 @@
   --choice: rgb(234, 234, 234, 0.5);
   --choice-border: rgb(234, 234, 234);
   --choice-hover: rgb(238, 238, 238);
+  --choice-text: rgb(55, 55, 55);
 }
 [data-theme="dark"] {
-  --choice: rgb(55, 55, 55);
+  --choice: rgb(55, 55, 55, 0.5);
   --choice-border: rgb(45, 45, 45);
   --choice-hover: rgb(69, 69, 69);
+  --choice-text: rgb(245, 245, 245);
 }
 
 .options {
   display: grid;
 }
 .options .class {
-  font-weight: 700;
+  font-weight: 500;
   padding: 0.2em 0.6em;
-  background-color: rgba(132, 180, 252, 0.4);
-  border-radius: 6px;
+  border-bottom: 2px solid rgba(132, 180, 252, 0.4);
+  width: fit-content;
+  border-radius: 2px;
   margin-bottom: 0.8em;
 }
 
@@ -38,14 +41,15 @@
   display: flex;
   gap: 0.4em;
 }
-.choices .btn {
+.choices .choice-btn {
   border: 1px solid var(--btn-border);
   border-radius: 6px;
   background-color: var(--choice);
+  color: var(--choice-text);
   height: 2em;
   padding: 0 0.4em;
 }
-.choices .btn:hover {
+.choices .choice-btn:hover {
   background-color: var(--choice-hover);
 }
 

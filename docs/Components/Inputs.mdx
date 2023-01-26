@@ -1,0 +1,29 @@
+import Layout from "../../src/components/Layout/layout";
+
+### Text Input
+
+<Layout
+  options={{
+    desc: "text-i <shape> <size>",
+    options: [
+      {
+        name: "shape",
+        choices: "rounded square",
+      },
+      {
+        name: "size",
+        choices: "sm md lg",
+      },
+    ],
+  }}
+  preview={[
+    <input className="text-i square sm" type="text" />,
+    <input className="text-i square md" type="text" />,
+    <input className="text-i square lg" type="text" />,
+    <input className="text-i rounded sm" type="text" />,
+    <input className="text-i rounded md" type="text" />,
+    <input className="text-i rounded lg" type="text" />,
+  ]}
+  html='<input className="text-i square md" type="text" />'
+  jsx='<input className="text-i rounded md" type="text" />'
+/>

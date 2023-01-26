@@ -18,6 +18,7 @@
   --btn-hover: rgb(69, 69, 69);
 }
 
+/* pages/index */
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -40,29 +41,33 @@
 .install button:hover {
   background-color: var(--btn-hover);
 }
+.waves {
+  width: 100vw;
+}
 
+/* pages/heya */
 .heya {
   font-size: 4em;
 }
+
+/* pages/changelog */
 .changelogContainer {
-  padding-top: 4em;
+  padding: 3.8em 0;
   display: grid;
   justify-content: center;
 }
 .changelog {
   display: flex;
   flex-direction: column;
-  width: 90vw;
+  width: 80vw;
 }
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 0 2rem;
-  }
+.changelog h2 {
+  width: fit-content;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.2em;
 }
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.changelog h3,
+.changelog ul,
+ul li {
+  margin-left: 0.4em;
 }
