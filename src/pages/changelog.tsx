@@ -18,6 +18,7 @@ export default function Changelog(): JSX.Element {
           <ul>
             <li>Shorter class names: text-i becomes txt-i.</li>
             <li>Better component darkmode styling.</li>
+            <li>New greyscale colors.</li>
           </ul>
           <h3>Whats New</h3>
           <ul>
@@ -26,6 +27,9 @@ export default function Changelog(): JSX.Element {
             </li>
             <li>
               <a href="/docs/Components/Buttons">New buttons styles</a>
+            </li>
+            <li>
+              <a href="/docs/Components/Cards">Cards</a>
             </li>
           </ul>
           <br />
