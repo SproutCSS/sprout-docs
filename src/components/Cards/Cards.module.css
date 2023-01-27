@@ -1,10 +1,10 @@
 :root {
   --card-primary: 2px solid black;
-  --shadow: 0.5em 0.5em rgb(69, 69, 69);
+  --card-shadow: 0.5em 0.5em rgb(69, 69, 69);
 }
 [data-theme="dark"] {
   --card-primary: 2px solid rgb(59, 59, 59);
-  --shadow: 0.5em 0.5em rgb(58, 58, 58);
+  --card-shadow: 0.5em 0.5em rgb(58, 58, 58);
 }
 .cards {
   width: 100vw;
@@ -16,7 +16,7 @@
 .card {
   border: var(--card-primary);
   padding: 1em;
-  box-shadow: var(--shadow);
+  box-shadow: var(--card-shadow);
   transform: translate(-6px, -6px);
   width: 25vw;
   min-height: 160px;
