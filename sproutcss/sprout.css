@@ -356,67 +356,6 @@ Buttons
 }
 
 /* 
-Badges
--------------------------- */
-.bdg {
-  color: var(--light);
-  border: 1px solid var(--primary);
-  background-color: var(--primary);
-}
-
-.bdg.round {
-  border-radius: 64px;
-}
-.bdg.rounded {
-  border-radius: 8px;
-}
-.bdg.square {
-  border-radius: 2px;
-}
-
-.bdg.sm {
-  padding: var(--padding-xs);
-  font-size: xx-small;
-}
-.bdg.md {
-  padding: var(--padding-sm);
-  font-size: x-small;
-}
-.bdg.lg {
-  padding: var(--padding);
-  font-size: small;
-}
-
-.bdg.red {
-  background-color: var(--red-partial);
-  border: 1px solid var(--red);
-}
-.bdg.orange {
-  background-color: var(--orange-partial);
-  border: 1px solid var(--orange);
-}
-.bdg.yellow {
-  background-color: var(--yellow-partial);
-  border: 1px solid var(--yellow);
-}
-.bdg.green {
-  background-color: var(--green-partial);
-  border: 1px solid var(--green);
-}
-.bdg.blue {
-  background-color: var(--blue-partial);
-  border: 1px solid var(--blue);
-}
-.bdg.purple {
-  background-color: var(--purple-partial);
-  border: 1px solid var(--purple);
-}
-.bdg.pink {
-  background-color: var(--pink-partial);
-  border: 1px solid var(--pink);
-}
-
-/* 
 Inputs
 -------------------------- */
 /* txt Input */
@@ -788,21 +727,4 @@ Inputs
   background-color: #ed6ab810;
   color: #ed6ab8;
   border-color: #ed6ab8;
-}
-
-/* Layouts */
-/* Grid Layout */
-:root {
-  --grid-justify: center;
-}
-
-.grd {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(var(--card-size), max-content)
-  );
-  gap: 0.4em;
-  justify-content: var(--grid-justify);
-  width: 100%;
 }
