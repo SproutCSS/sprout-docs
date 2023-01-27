@@ -1,0 +1,25 @@
+import Layout from "../../src/components/Layout/layout";
+
+### Card Grid
+
+<Layout
+  options={{
+    desc: "crd-grd <justify>",
+    options: [
+      {
+        name: "justify",
+        choices: "left center right",
+      },
+    ],
+  }}
+  preview={[
+    <div className="grid left">
+      <div className="crd sm primary"></div>
+      <div className="crd sm primary"></div>
+      <div className="crd sm primary"></div>
+      <div className="crd sm primary"></div>
+    </div>,
+  ]}
+  html='<div className="crd-grd left">{cards}</div>'
+  jsx='<div className="crd-grd center">{cards}</div>'
+/>

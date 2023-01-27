@@ -13,6 +13,26 @@ export default function Changelog(): JSX.Element {
       <main className={styles.changelogContainer}>
         <h1>Change Log</h1>
         <div className={styles.changelog}>
+          <h2>1.2.0</h2>
+          <h3>Whats Changed</h3>
+          <ul>
+            <li>Shorter class names: text-i becomes txt-i.</li>
+            <li>Better component darkmode styling.</li>
+            <li>New greyscale colors.</li>
+          </ul>
+          <h3>Whats New</h3>
+          <ul>
+            <li>
+              <a href="/docs/Components/Inputs">Number inputs</a>
+            </li>
+            <li>
+              <a href="/docs/Components/Buttons">New buttons styles</a>
+            </li>
+            <li>
+              <a href="/docs/Components/Cards">Cards</a>
+            </li>
+          </ul>
+          <br />
           <h2>1.1.0</h2>
           <h3>Whats Changed</h3>
           <ul>

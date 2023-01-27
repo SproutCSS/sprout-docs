@@ -16,7 +16,7 @@ import Layout from "../../src/components/Layout/layout";
       },
       {
         name: "hover",
-        choices: "outline darker lighter",
+        choices: "darker outline lighter",
       },
     ],
   }}
@@ -43,6 +43,123 @@ import Layout from "../../src/components/Layout/layout";
       <button class="btn square xl lighter">button</button>
     </>,
   ]}
-  html='<button class="btn rounded md darker" >button</button>'
+  html='<button class="btn rounded md darker">button</button>'
   jsx='<button className="btn round md outline">button</button>'
+/>
+
+### Shadow Button
+
+<Layout
+  options={{
+    desc: "shdw-btn <shape> <size> <hover>",
+    options: [
+      {
+        name: "shape",
+        choices: "rounded round square",
+      },
+      {
+        name: "size",
+        choices: "xs sm md lg xl",
+      },
+      {
+        name: "hover",
+        choices: "darker translate lighter",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <button class="shdw-btn rounded xs darker">button</button>
+      <button class="shdw-btn rounded sm darker">button</button>
+      <button class="shdw-btn rounded md darker">button</button>
+      <button class="shdw-btn rounded lg darker">button</button>
+      <button class="shdw-btn rounded xl darker">button</button>
+    </>,
+    <>
+      <button class="shdw-btn round xs translate">button</button>
+      <button class="shdw-btn round sm translate">button</button>
+      <button class="shdw-btn round md translate">button</button>
+      <button class="shdw-btn round lg translate">button</button>
+      <button class="shdw-btn round xl translate">button</button>
+    </>,
+    <>
+      <button class="shdw-btn square xs lighter">button</button>
+      <button class="shdw-btn square sm lighter">button</button>
+      <button class="shdw-btn square md lighter">button</button>
+      <button class="shdw-btn square lg lighter">button</button>
+      <button class="shdw-btn square xl lighter">button</button>
+    </>,
+  ]}
+  html='<button class="shdw-btn rounded md darker">button</button>'
+  jsx='<button className="shdw-btn round md translate">button</button>'
+/>
+
+### Icon Button
+
+<Layout
+  options={{
+    desc: "icn-btn <shape> <size> <hover> <color>",
+    options: [
+      {
+        name: "shape",
+        choices: "rounded round square",
+      },
+      {
+        name: "size",
+        choices: "xs sm md lg xl",
+      },
+      {
+        name: "hover",
+        choices: "darker outline lighter translate",
+      },
+      {
+        name: "color",
+        choices: "primary grey red orange yellow green blue purple pink",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <button class="icn-btn rounded xs darker red">🍓</button>
+      <button class="icn-btn rounded sm darker orange">🍊</button>
+      <button class="icn-btn rounded md darker yellow">🍋</button>
+      <button class="icn-btn rounded md darker green">🍐</button>
+      <button class="icn-btn rounded md darker blue">🫐</button>
+      <button class="icn-btn rounded lg darker purple">🍍</button>
+      <button class="icn-btn rounded xl darker pink">🍉</button>
+      <button class="icn-btn rounded xl darker grey">🥥</button>
+    </>,
+    <>
+      <button class="icn-btn round xs outline red">🍓</button>
+      <button class="icn-btn round sm outline orange">🍊</button>
+      <button class="icn-btn round md outline yellow">🍋</button>
+      <button class="icn-btn round md outline green">🍐</button>
+      <button class="icn-btn round md outline blue">🫐</button>
+      <button class="icn-btn round lg outline purple">🍍</button>
+      <button class="icn-btn round xl outline pink">🍉</button>
+      <button class="icn-btn round xl outline grey">🥥</button>
+    </>,
+    <>
+      <button class="icn-btn square xs lighter red">🍓</button>
+      <button class="icn-btn square sm lighter orange">🍊</button>
+      <button class="icn-btn square md lighter yellow">🍋</button>
+      <button class="icn-btn square md lighter green">🍐</button>
+      <button class="icn-btn square md lighter blue">🫐</button>
+      <button class="icn-btn square lg lighter purple">🍍</button>
+      <button class="icn-btn square xl lighter pink">🍉</button>
+      <button class="icn-btn square xl lighter grey">🥥</button>
+    </>,
+    <>
+      <button class="icn-btn square xs translate red">🍓</button>
+      <button class="icn-btn square sm translate orange">🍊</button>
+      <button class="icn-btn square md translate yellow">🍋</button>
+      <button class="icn-btn square md translate green">🍐</button>
+      <button class="icn-btn square md translate blue">🫐</button>
+      <button class="icn-btn square lg translate purple">🍍</button>
+      <button class="icn-btn square xl translate pink">🍉</button>
+      <button class="icn-btn square xl translate grey">🥥</button>
+    </>,
+  ]}
+  html='<button class="icn-btn rounded md outline red">🍒</button>'
+  jsx='<button className="icn-btn round md translate green">🥝</button>'
 />

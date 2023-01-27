@@ -3,7 +3,7 @@ import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import CodeBlock from "@theme/CodeBlock";
 import "./layout.css";
-import "../../css/sprout.css";
+import "../../../sproutcss/sprout.css";
 
 export default function Layout({ options, preview, html, jsx }) {
   return (
