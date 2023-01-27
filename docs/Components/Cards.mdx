@@ -1,0 +1,102 @@
+import Layout from "../../src/components/Layout/layout";
+
+### Card
+
+<Layout
+  options={{
+    desc: "crd <size> <shape> <color> <shadow> <hover color> <hover shadow>",
+    options: [
+      {
+        name: "size",
+        choices: "sm md lg",
+      },
+      {
+        name: "shape",
+        choices: "square rounded",
+      },
+      {
+        name: "color",
+        choices: "primary black red orange yellow green blue purple pink",
+      },
+      {
+        name: "shadow",
+        choices: "shadow",
+      },
+      {
+        name: "hover color",
+        choices:
+          "h-primary h-black h-red h-orange h-yellow h-green h-blue h-purple h-pink",
+      },
+      {
+        name: "hover shadow",
+        choices: "h-shadow h-none",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <div className="crd sm shadow rounded">
+        <h4>Hi! I'm a card.</h4>
+      </div>
+      <div className="crd md primary rounded">
+        <h4>Hi! I'm a card.</h4>
+      </div>
+      <div className="crd lg h-orange black square">
+        <h4>Hi! I'm a card.</h4>
+      </div>
+    </>,
+  ]}
+  html='<div className="crd">{children}</div>'
+  jsx='<div className="crd">{children}</div>'
+/>
+
+### Outline Card
+
+<Layout
+  options={{
+    desc: "otln-crd <size> <shape> <border size> <color> <shadow> <hover color> <hover shadow>",
+    options: [
+      {
+        name: "size",
+        choices: "sm md lg",
+      },
+      {
+        name: "shape",
+        choices: "square rounded",
+      },
+      {
+        name: "border size",
+        choices: "b-two b-three b-four b-five b-six",
+      },
+      {
+        name: "color",
+        choices: "primary red orange yellow green blue purple pink",
+      },
+      {
+        name: "shadow",
+        choices: "shadow",
+      },
+      {
+        name: "hover color",
+        choices:
+          "h-primary h-black h-red h-orange h-yellow h-green h-blue h-purple h-pink",
+      },
+      {
+        name: "hover shadow",
+        choices: "h-shadow h-none",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <div className="otln-crd sm shadow square">
+        <h4>Hi! I'm a card.</h4>
+      </div>
+      <div className="otln-crd md green h-pink rounded b-three">
+        <h4>Hi! I'm a card.</h4>
+      </div>
+    </>,
+  ]}
+  html='<div className="otln-crd">{children}</div>'
+  jsx='<div className="otln-crd">{children}</div>'
+/>
