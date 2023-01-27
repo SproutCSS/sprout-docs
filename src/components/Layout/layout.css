@@ -39,6 +39,7 @@
 }
 .row .choices {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.4em;
 }
 .choices .choice-btn {
@@ -51,6 +52,10 @@
 }
 .choices .choice-btn:hover {
   background-color: var(--choice-hover);
+}
+
+.flex {
+  overflow: scroll;
 }
 
 .flex * {
