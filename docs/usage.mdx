@@ -1,0 +1,52 @@
+---
+sidebar_position: 2
+---
+
+import Layout from "../src/components/Layout/layout";
+
+# Using Components
+
+To use a Sprout component:
+
+1. Copy and paste the component snippet
+   - For vanilla HTML files, use the HTML snippet
+   - For React or Next.js files use the JSX snippet
+
+```
+<button class="btn">😎</button>
+```
+
+2. Add optional classes if nessecary
+
+```
+<button class="btn rounded md darker">😎</button>
+```
+
+:::note Options
+Clicking on an optional class variation, ex. `variation1` or `square` in the below example, will copy it to your clipboard for easy pasting.
+:::
+
+### Example Component
+
+<Layout
+  options={{
+    desc: "component-name <optional class> <shape>",
+    options: [
+      {
+        name: "optional class",
+        choices: "variation1 variation2",
+      },
+      {
+        name: "shape",
+        choices: "square round rounded",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <button class="btn rounded md darker">button</button>
+    </>,
+  ]}
+  html='<button class="btn rounded md darker">HTML</button>'
+  jsx='<button className="btn rounded md darker">REACT</button>'
+/>
