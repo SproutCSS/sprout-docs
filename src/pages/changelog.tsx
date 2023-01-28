@@ -6,10 +6,7 @@ import styles from "./index.module.css";
 export default function Changelog(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="A Tiny CSS Component Library"
-    >
+    <Layout title="Change Log" description="A Tiny CSS Component Library">
       <main className={styles.changelogContainer}>
         <h1>Change Log</h1>
         <div className={styles.changelog}>

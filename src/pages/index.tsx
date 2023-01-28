@@ -30,10 +30,7 @@ export default function Home(): JSX.Element {
   ];
 
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="A Tiny CSS Component Library"
-    >
+    <Layout title="Welcome" description="A Tiny CSS Component Library">
       <main>
         <div className={styles.heroBanner}>
           <h1>Welcome to Sprout 🌱</h1>
