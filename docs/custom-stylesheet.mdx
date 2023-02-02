@@ -1,0 +1,54 @@
+---
+sidebar_position: 3
+---
+
+# Generating a Stylesheet
+
+:::caution Early Feature
+Stylesheet generation is still in-progress. Feel free to report bugs [here](https://github.com/dejmedus/sproutcss/issues).
+:::
+
+While in development it can be convienient to have access to all the different styling options. However, bringing every SproutCSS style into production would be inefficent.
+
+Instead, we can generate a css file that only contains used styles.
+
+### Create config file
+
+Begin by setting up a sprout.config.js file in the project's root directory. It should contain:
+
+- The <strong>path</strong> to your custom css file, including its name.
+- A <strong>files</strong> array, all the file extensions that may contain sprout style classes.
+
+You can also use the command `npx sproutcss --setup` or `npx sproutcss -s` to create one.
+
+```js title="sprout.config.js"
+module.exports = {
+  options: {
+    path: "./sprout.css",
+    files: ["html"],
+  },
+};
+```
+
+### Change @import
+
+Remove, or comment out, the SproutCSS path in index.css or other global stylesheet. Instead, import the new custom css file.
+
+```css title="index.css"
+/* @import "./node_modules/sproutcss/sprout.css"; */
+@import "./sprout.css";
+```
+
+:::note Import Path
+If config.filename is not sprout.css, make sure to reflect that change when importing i.e. **@import ./filename.css**
+:::
+
+### Generate stylesheet
+
+Use the command `npx sproutcss`.
+
+#### That's all! 🎉
+
+You should now have a stylesheet with only the nessecary css classes.
+
+Remember that this stylesheet will be rewritten on each new generation. If you choose to make changes to SproutCSS classes, do so in the <em>node_modules/sproutcss/sprout.css</em> file that `npx sproutcss` copies classes from.
