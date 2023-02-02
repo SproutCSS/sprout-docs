@@ -4,7 +4,7 @@ import Layout from "../../src/components/Layout/layout";
 
 <Layout
   options={{
-    desc: "btn <shape> <size> <hover>",
+    desc: "btn <shape> <size> <color> <hover> <hover color>",
     options: [
       {
         name: "shape",
@@ -15,43 +15,59 @@ import Layout from "../../src/components/Layout/layout";
         choices: "xs sm md lg xl",
       },
       {
+        name: "color",
+        choices: "black grey red orange yellow green blue purple pink",
+      },
+      {
         name: "hover",
-        choices: "darker outline lighter",
+        choices: "h-h-lighter h-h-darker h-outline",
+      },
+      {
+        name: "hover color",
+        choices:
+          "h-primary h-black h-grey h-red h-orange h-yellow h-green h-blue h-purple h-pink",
       },
     ],
   }}
   preview={[
     <>
-      <button class="btn rounded xs darker">button</button>
-      <button class="btn rounded sm darker">button</button>
-      <button class="btn rounded md darker">button</button>
-      <button class="btn rounded lg darker">button</button>
-      <button class="btn rounded xl darker">button</button>
+      <button class="btn square xs h-h-lighter">button</button>
+      <button class="btn square sm h-h-lighter">button</button>
+      <button class="btn square md h-h-lighter">button</button>
+      <button class="btn square lg h-h-lighter">button</button>
+      <button class="btn square xl h-h-lighter">button</button>
     </>,
     <>
-      <button class="btn round xs outline">button</button>
-      <button class="btn round sm outline">button</button>
-      <button class="btn round md outline">button</button>
-      <button class="btn round lg outline">button</button>
-      <button class="btn round xl outline">button</button>
+      <button class="btn rounded xs h-h-darker">button</button>
+      <button class="btn rounded sm h-h-darker">button</button>
+      <button class="btn rounded md h-h-darker">button</button>
+      <button class="btn rounded lg h-h-darker">button</button>
+      <button class="btn rounded xl h-h-darker">button</button>
     </>,
     <>
-      <button class="btn square xs lighter">button</button>
-      <button class="btn square sm lighter">button</button>
-      <button class="btn square md lighter">button</button>
-      <button class="btn square lg lighter">button</button>
-      <button class="btn square xl lighter">button</button>
+      <button class="btn round xs h-outline">button</button>
+      <button class="btn round sm h-outline">button</button>
+      <button class="btn round md h-outline">button</button>
+      <button class="btn round lg h-outline">button</button>
+      <button class="btn round xl h-outline">button</button>
+    </>,
+    <>
+      <button class="btn round xs black h-grey">button</button>
+      <button class="btn round sm blue h-yellow">button</button>
+      <button class="btn round md red h-orange">button</button>
+      <button class="btn round lg pink h-green">button</button>
+      <button class="btn round xl purple h-primary">button</button>
     </>,
   ]}
-  html='<button class="btn rounded md darker">button</button>'
-  jsx='<button className="btn round md outline">button</button>'
+  html='<button class="btn rounded md h-h-darker">button</button>'
+  jsx='<button className="btn round md h-outline">button</button>'
 />
 
 ### Shadow Button
 
 <Layout
   options={{
-    desc: "shdw-btn <shape> <size> <hover>",
+    desc: "shdw-btn <shape> <size> <color> <hover> <hover color>",
     options: [
       {
         name: "shape",
@@ -62,43 +78,52 @@ import Layout from "../../src/components/Layout/layout";
         choices: "xs sm md lg xl",
       },
       {
+        name: "color",
+        choices: "black grey red orange yellow green blue purple pink",
+      },
+      {
         name: "hover",
-        choices: "darker translate lighter",
+        choices: "h-darker h-translate h-lighter",
+      },
+      {
+        name: "hover color",
+        choices:
+          "h-primary h-black h-grey h-red h-orange h-yellow h-green h-blue h-purple h-pink",
       },
     ],
   }}
   preview={[
     <>
-      <button class="shdw-btn rounded xs darker">button</button>
-      <button class="shdw-btn rounded sm darker">button</button>
-      <button class="shdw-btn rounded md darker">button</button>
-      <button class="shdw-btn rounded lg darker">button</button>
-      <button class="shdw-btn rounded xl darker">button</button>
+      <button class="shdw-btn rounded xs pink h-purple h-darker">button</button>
+      <button class="shdw-btn rounded sm h-darker">button</button>
+      <button class="shdw-btn rounded md h-darker">button</button>
+      <button class="shdw-btn rounded lg h-darker">button</button>
+      <button class="shdw-btn rounded xl h-darker">button</button>
     </>,
     <>
-      <button class="shdw-btn round xs translate">button</button>
-      <button class="shdw-btn round sm translate">button</button>
-      <button class="shdw-btn round md translate">button</button>
-      <button class="shdw-btn round lg translate">button</button>
-      <button class="shdw-btn round xl translate">button</button>
+      <button class="shdw-btn round xs h-translate">button</button>
+      <button class="shdw-btn round sm h-translate">button</button>
+      <button class="shdw-btn round md h-translate">button</button>
+      <button class="shdw-btn round lg h-translate">button</button>
+      <button class="shdw-btn round xl h-translate">button</button>
     </>,
     <>
-      <button class="shdw-btn square xs lighter">button</button>
-      <button class="shdw-btn square sm lighter">button</button>
-      <button class="shdw-btn square md lighter">button</button>
-      <button class="shdw-btn square lg lighter">button</button>
-      <button class="shdw-btn square xl lighter">button</button>
+      <button class="shdw-btn square xs h-lighter">button</button>
+      <button class="shdw-btn square sm h-lighter">button</button>
+      <button class="shdw-btn square md h-lighter">button</button>
+      <button class="shdw-btn square lg h-lighter">button</button>
+      <button class="shdw-btn square xl h-lighter">button</button>
     </>,
   ]}
-  html='<button class="shdw-btn rounded md darker">button</button>'
-  jsx='<button className="shdw-btn round md translate">button</button>'
+  html='<button class="shdw-btn rounded md h-darker">button</button>'
+  jsx='<button className="shdw-btn round md h-translate">button</button>'
 />
 
 ### Icon Button
 
 <Layout
   options={{
-    desc: "icn-btn <shape> <size> <hover> <color>",
+    desc: "icn-btn <shape> <size> <hover> <color> <hover color>",
     options: [
       {
         name: "shape",
@@ -109,57 +134,57 @@ import Layout from "../../src/components/Layout/layout";
         choices: "xs sm md lg xl",
       },
       {
-        name: "hover",
-        choices: "darker outline lighter translate",
+        name: "color",
+        choices: "primary black grey red orange yellow green blue purple pink",
       },
       {
-        name: "color",
-        choices: "primary grey red orange yellow green blue purple pink",
+        name: "hover",
+        choices: "h-darker h-outline h-lighter h-translate",
+      },
+      {
+        name: "hover color",
+        choices: "h-primary h-black h-grey h-red h-orange h-yellow h-green h-blue h-purple h-pink",
       },
     ],
-  }}
-  preview={[
-    <>
-      <button class="icn-btn rounded xs darker red">🍓</button>
-      <button class="icn-btn rounded sm darker orange">🍊</button>
-      <button class="icn-btn rounded md darker yellow">🍋</button>
-      <button class="icn-btn rounded md darker green">🍐</button>
-      <button class="icn-btn rounded md darker blue">🫐</button>
-      <button class="icn-btn rounded lg darker purple">🍍</button>
-      <button class="icn-btn rounded xl darker pink">🍉</button>
-      <button class="icn-btn rounded xl darker grey">🥥</button>
-    </>,
-    <>
-      <button class="icn-btn round xs outline red">🍓</button>
-      <button class="icn-btn round sm outline orange">🍊</button>
-      <button class="icn-btn round md outline yellow">🍋</button>
-      <button class="icn-btn round md outline green">🍐</button>
-      <button class="icn-btn round md outline blue">🫐</button>
-      <button class="icn-btn round lg outline purple">🍍</button>
-      <button class="icn-btn round xl outline pink">🍉</button>
-      <button class="icn-btn round xl outline grey">🥥</button>
-    </>,
-    <>
-      <button class="icn-btn square xs lighter red">🍓</button>
-      <button class="icn-btn square sm lighter orange">🍊</button>
-      <button class="icn-btn square md lighter yellow">🍋</button>
-      <button class="icn-btn square md lighter green">🍐</button>
-      <button class="icn-btn square md lighter blue">🫐</button>
-      <button class="icn-btn square lg lighter purple">🍍</button>
-      <button class="icn-btn square xl lighter pink">🍉</button>
-      <button class="icn-btn square xl lighter grey">🥥</button>
-    </>,
-    <>
-      <button class="icn-btn square xs translate red">🍓</button>
-      <button class="icn-btn square sm translate orange">🍊</button>
-      <button class="icn-btn square md translate yellow">🍋</button>
-      <button class="icn-btn square md translate green">🍐</button>
-      <button class="icn-btn square md translate blue">🫐</button>
-      <button class="icn-btn square lg translate purple">🍍</button>
-      <button class="icn-btn square xl translate pink">🍉</button>
-      <button class="icn-btn square xl translate grey">🥥</button>
-    </>,
-  ]}
-  html='<button class="icn-btn rounded md outline red">🍒</button>'
-  jsx='<button className="icn-btn round md translate green">🥝</button>'
-/>
+}}
+preview={[
+
+<>
+  <button class="icn-btn rounded xs h-darker red">🍓</button>
+  <button class="icn-btn rounded sm h-darker orange">🍊</button>
+  <button class="icn-btn rounded md h-darker yellow">🍋</button>
+  <button class="icn-btn rounded md h-darker green">🍐</button>
+  <button class="icn-btn rounded md h-darker blue">🫐</button>
+  <button class="icn-btn rounded lg h-darker purple">🍍</button>
+  <button class="icn-btn rounded xl h-darker pink">🍉</button>
+  <button class="icn-btn rounded xl h-darker grey">🥥</button>
+</>
+,<>
+  <button class="icn-btn round xs h-outline red">🍓</button>
+  <button class="icn-btn round sm h-outline orange">🍊</button>
+  <button class="icn-btn round md h-outline yellow">🍋</button>
+  <button class="icn-btn round md h-outline green">🍐</button>
+  <button class="icn-btn round md h-outline blue">🫐</button>
+  <button class="icn-btn round lg h-outline purple">🍍</button>
+  <button class="icn-btn round xl h-outline pink">🍉</button>
+  <button class="icn-btn round xl h-outline grey">🥥</button>
+</>,<>
+  <button class="icn-btn square xs h-lighter red">🍓</button>
+  <button class="icn-btn square sm h-lighter orange">🍊</button>
+  <button class="icn-btn square md h-lighter yellow">🍋</button>
+  <button class="icn-btn square md h-lighter green">🍐</button>
+  <button class="icn-btn square md h-lighter blue">🫐</button>
+  <button class="icn-btn square lg h-lighter purple">🍍</button>
+  <button class="icn-btn square xl h-lighter pink">🍉</button>
+  <button class="icn-btn square xl h-lighter grey">🥥</button>
+</>,<>
+  <button class="icn-btn square xs h-translate red">🍓</button>
+  <button class="icn-btn square sm h-translate orange">🍊</button>
+  <button class="icn-btn square md h-translate yellow">🍋</button>
+  <button class="icn-btn square md h-translate green">🍐</button>
+  <button class="icn-btn square md h-translate blue">🫐</button>
+  <button class="icn-btn square lg h-translate purple">🍍</button>
+  <button class="icn-btn square xl h-translate pink">🍉</button>
+  <button class="icn-btn square xl h-translate grey">🥥</button>
+</>, ]} html='<button class="icn-btn rounded md h-outline red">🍒</button>' jsx='
+<button className="icn-btn round md h-translate green">🥝</button>' />
