@@ -16,6 +16,10 @@
 .env.production.local
 notes.md
 
+# In-Progress
+src/pages/testpage.tsx
+src/pages._changelog.mdx
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
