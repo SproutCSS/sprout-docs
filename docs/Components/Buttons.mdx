@@ -1,6 +1,10 @@
+---
+description: Button, Shadow Button, and Icon Button
+---
+
 import Layout from "../../src/components/Layout/layout";
 
-### Primary Button
+### Button
 
 <Layout
   options={{
@@ -20,10 +24,10 @@ import Layout from "../../src/components/Layout/layout";
       },
       {
         name: "hover",
-        choices: "h-h-lighter h-h-darker h-outline",
+        choices: "h-lighter h-darker h-outline",
       },
       {
-        name: "hover color",
+        name: "h-color",
         choices:
           "h-primary h-black h-grey h-red h-orange h-yellow h-green h-blue h-purple h-pink",
       },
@@ -31,18 +35,18 @@ import Layout from "../../src/components/Layout/layout";
   }}
   preview={[
     <>
-      <button class="btn square xs h-h-lighter">button</button>
-      <button class="btn square sm h-h-lighter">button</button>
-      <button class="btn square md h-h-lighter">button</button>
-      <button class="btn square lg h-h-lighter">button</button>
-      <button class="btn square xl h-h-lighter">button</button>
+      <button class="btn square xs h-lighter">button</button>
+      <button class="btn square sm h-lighter">button</button>
+      <button class="btn square md h-lighter">button</button>
+      <button class="btn square lg h-lighter">button</button>
+      <button class="btn square xl h-lighter">button</button>
     </>,
     <>
-      <button class="btn rounded xs h-h-darker">button</button>
-      <button class="btn rounded sm h-h-darker">button</button>
-      <button class="btn rounded md h-h-darker">button</button>
-      <button class="btn rounded lg h-h-darker">button</button>
-      <button class="btn rounded xl h-h-darker">button</button>
+      <button class="btn rounded xs h-darker">button</button>
+      <button class="btn rounded sm h-darker">button</button>
+      <button class="btn rounded md h-darker">button</button>
+      <button class="btn rounded lg h-darker">button</button>
+      <button class="btn rounded xl h-darker">button</button>
     </>,
     <>
       <button class="btn round xs h-outline">button</button>
@@ -59,7 +63,7 @@ import Layout from "../../src/components/Layout/layout";
       <button class="btn round xl purple h-primary">button</button>
     </>,
   ]}
-  html='<button class="btn rounded md h-h-darker">button</button>'
+  html='<button class="btn rounded md h-darker">button</button>'
   jsx='<button className="btn round md h-outline">button</button>'
 />
 
@@ -86,7 +90,7 @@ import Layout from "../../src/components/Layout/layout";
         choices: "h-darker h-translate h-lighter",
       },
       {
-        name: "hover color",
+        name: "h-color",
         choices:
           "h-primary h-black h-grey h-red h-orange h-yellow h-green h-blue h-purple h-pink",
       },
@@ -94,7 +98,7 @@ import Layout from "../../src/components/Layout/layout";
   }}
   preview={[
     <>
-      <button class="shdw-btn rounded xs pink h-purple h-darker">button</button>
+      <button class="shdw-btn rounded xs h-darker">button</button>
       <button class="shdw-btn rounded sm h-darker">button</button>
       <button class="shdw-btn rounded md h-darker">button</button>
       <button class="shdw-btn rounded lg h-darker">button</button>
@@ -113,6 +117,23 @@ import Layout from "../../src/components/Layout/layout";
       <button class="shdw-btn square md h-lighter">button</button>
       <button class="shdw-btn square lg h-lighter">button</button>
       <button class="shdw-btn square xl h-lighter">button</button>
+    </>,
+    <>
+      <button class="shdw-btn square xs black h-grey h-translate">
+        button
+      </button>
+      <button class="shdw-btn square sm orange h-red h-translate">
+        button
+      </button>
+      <button class="shdw-btn square md green h-yellow h-translate">
+        button
+      </button>
+      <button class="shdw-btn square lg blue h-primary h-translate">
+        button
+      </button>
+      <button class="shdw-btn square xl pink h-purple h-translate">
+        button
+      </button>
     </>,
   ]}
   html='<button class="shdw-btn rounded md h-darker">button</button>'
@@ -142,8 +163,9 @@ import Layout from "../../src/components/Layout/layout";
         choices: "h-darker h-outline h-lighter h-translate",
       },
       {
-        name: "hover color",
-        choices: "h-primary h-black h-grey h-red h-orange h-yellow h-green h-blue h-purple h-pink",
+        name: "h-color",
+        choices:
+          "h-primary h-black h-grey h-red h-orange h-yellow h-green h-blue h-purple h-pink",
       },
     ],
 }}
