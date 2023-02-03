@@ -25,7 +25,7 @@ export default function Changelog(): JSX.Element {
             </li>
             <li>
               If a component color is not specified, Sprout will now default to
-              the primary color
+              the primary color.
             </li>
           </ul>
           <h3>Whats New</h3>
@@ -41,8 +41,16 @@ export default function Changelog(): JSX.Element {
               </a>
             </li>
             <li>
+              Set your project's{" "}
+              <a href="/docs/usage#primary-color">primary color</a> from the
+              command line.
+            </li>
+            <li>
               New color options. Choose from primary, black, grey, red, orange,
               yellow, green, blue, purple, and pink.
+            </li>
+            <li>
+              <a href="/docs/components/Badges">Badges</a>
             </li>
           </ul>
           <br />
