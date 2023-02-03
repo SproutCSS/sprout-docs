@@ -14,20 +14,18 @@ Instead, we can generate a css file that only contains used styles.
 
 ### Create config file
 
-Begin by setting up a sprout.config.js file in the project's root directory. It should contain:
+Begin by setting up a sprout.config.json file in the project's root directory. It should contain:
 
 - The <strong>path</strong> to your custom css file, including its name.
 - A <strong>files</strong> array, all the file extensions that may contain sprout style classes.
 
 You can also use the command `npx sproutcss --setup` or `npx sproutcss -s` to create one.
 
-```js title="sprout.config.js"
-module.exports = {
-  options: {
-    path: "./sprout.css",
-    files: ["html"],
-  },
-};
+```json title="sprout.config.json"
+{
+  "path": "./sprout.css",
+  "files": ["html"]
+}
 ```
 
 ### Change @import
