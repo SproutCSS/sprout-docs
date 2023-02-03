@@ -38,10 +38,12 @@ export default function Home(): JSX.Element {
           <div className={styles.install}>
             <button
               onClick={() =>
-                navigator.clipboard.writeText("npm install -D sproutcss")
+                navigator.clipboard.writeText(
+                  "npm install --save-dev sproutcss"
+                )
               }
             >
-              npm install -D sproutcss
+              npm install --save-dev sproutcss
             </button>
           </div>
         </div>

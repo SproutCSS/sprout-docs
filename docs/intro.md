@@ -13,7 +13,7 @@ Develop with the entire SproutCSS stylesheet and when you're ready for Productio
 1. Install the SproutCSS module as a development dependency
 
 ``` bash
-  npm install -D sproutcss
+  npm install --save-dev sproutcss
 ```
 2. Import the stylesheet
 

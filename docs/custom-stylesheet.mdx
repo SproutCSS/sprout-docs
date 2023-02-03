@@ -40,15 +40,15 @@ Remove, or comment out, the SproutCSS path in index.css or other global styleshe
 ```
 
 :::note Import Path
-If config.filename is not sprout.css, make sure to reflect that change when importing i.e. **@import ./filename.css**
+If config.path is not set to ./sprout.css, make sure to reflect that change when importing i.e. **@import path/to/styles.css**
 :::
 
 ### Generate stylesheet
 
-Use the command `npx sproutcss`.
+Use the command `npx sproutcss`
 
 #### That's all! 🎉
 
 You should now have a stylesheet with only the nessecary css classes.
 
-Remember that this stylesheet will be rewritten on each new generation. If you choose to make changes to SproutCSS classes, do so in the <em>node_modules/sproutcss/sprout.css</em> file that `npx sproutcss` copies classes from.
+Remember that this stylesheet will be rewritten on each new generation. If you choose to make changes to SproutCSS classes, do so in the <em>node_modules/sproutcss/sprout.css</em> file that npx sproutcss copies classes from.
