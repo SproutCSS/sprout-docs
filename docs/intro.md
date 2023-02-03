@@ -4,14 +4,16 @@ sidebar_position: 1
 
 # Welcome to Sprout
 
-Sprout is an open source collection of component blueprints.
+Sprout is an open source collection of component blueprints. 
+
+Develop with the entire SproutCSS stylesheet and when you're ready for Production, generate a custom stylesheet that only includes what you need.
 
 ## Getting Started
 
-1. Download the SproutCSS module
+1. Install the SproutCSS module as a development dependency
 
 ``` bash
-  npm i sproutcss
+  npm install --save-dev sproutcss
 ```
 2. Import the stylesheet
 
@@ -25,7 +27,7 @@ Sprout is an open source collection of component blueprints.
 
 :::
 
-3. Copy and paste components as needed.
-4. Enjoy!
+3. Copy and paste [components](/docs/usage) as needed.
+4. When you're ready, [generate a custom stylesheet](/docs/custom-stylesheet).
 
 

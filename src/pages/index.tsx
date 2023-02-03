@@ -24,8 +24,8 @@ export default function Home(): JSX.Element {
     {
       path: "/changelog",
       blank: false,
-      title: "v1.2.0",
-      body: `- Better component darkmode styling`,
+      title: "New in v1.3.0",
+      body: `No more unused styling. Generate a custom CSS stylesheet 🎉`,
     },
   ];
 
@@ -37,9 +37,13 @@ export default function Home(): JSX.Element {
           <p>An Open Source Collection of CSS Blueprints</p>
           <div className={styles.install}>
             <button
-              onClick={() => navigator.clipboard.writeText("npm i sproutcss")}
+              onClick={() =>
+                navigator.clipboard.writeText(
+                  "npm install --save-dev sproutcss"
+                )
+              }
             >
-              npm i sproutcss
+              npm install --save-dev sproutcss
             </button>
           </div>
         </div>

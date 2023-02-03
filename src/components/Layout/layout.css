@@ -26,8 +26,8 @@
 .options .row {
   display: flex;
   align-items: center;
-  gap: 1em;
-  padding: 0.2em 0.6em;
+  gap: 0.4em;
+  padding: 0.2em 0.5em;
 
   /* fix for weird styling */
   width: 100%;
@@ -40,7 +40,7 @@
 .row .choices {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4em;
+  gap: 0.28em;
 }
 .choices .choice-btn {
   border: 1px solid var(--btn-border);
@@ -54,8 +54,13 @@
   background-color: var(--choice-hover);
 }
 
-.flex {
+.flexContainer {
   overflow: scroll;
+}
+.flex {
+  width: fit-content;
+  display: flex;
+  align-items: center;
 }
 
 .flex * {

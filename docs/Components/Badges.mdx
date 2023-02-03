@@ -1,0 +1,46 @@
+---
+description: Text Badge
+---
+
+import Layout from "../../src/components/Layout/layout";
+
+### Text Badge
+
+<Layout
+  options={{
+    desc: "bdg <color> <shape> <size>",
+    options: [
+      {
+        name: "color",
+        choices: "grey black red orange yellow green blue purple pink",
+      },
+      {
+        name: "shape",
+        choices: "rounded round square",
+      },
+      {
+        name: "size",
+        choices: "sm md lg",
+      },
+    ],
+  }}
+  preview={[
+    <>
+      <div class="bdg rounded sm grey">Badge</div>
+      <div class="bdg rounded md black">Badge</div>
+      <div class="bdg rounded lg red">Badge</div>
+    </>,
+    <>
+      <div class="bdg round sm orange">Badge</div>
+      <div class="bdg round md yellow">Badge</div>
+      <div class="bdg round lg green">Badge</div>
+    </>,
+    <>
+      <div class="bdg square sm blue">Badge</div>
+      <div class="bdg square md purple">Badge</div>
+      <div class="bdg square lg pink">Badge</div>
+    </>,
+  ]}
+  html='<div class="bdg rounded md">Badge</div>'
+  jsx='<div className="bdg round md">Badge</div>'
+/>

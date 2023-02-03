@@ -75,6 +75,14 @@ const config = {
           },
         ],
       },
+      announcementBar: {
+        id: 'in-progress',
+        content:
+          'Currently in development. See the changelog <a target="_blank" rel="noopener noreferrer" href="/changelog">here</a>',
+        backgroundColor: 'rgb(107, 166, 255, 0.6)',
+        textColor: '#000',
+        isCloseable: true,
+      },
       footer: {
         links: [
 

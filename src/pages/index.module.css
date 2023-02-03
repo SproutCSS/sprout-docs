@@ -11,11 +11,13 @@
   --btn: rgb(234, 234, 234, 0.5);
   --btn-border: rgb(234, 234, 234);
   --btn-hover: rgb(238, 238, 238);
+  --text: black;
 }
 [data-theme="dark"] {
   --btn: rgb(55, 55, 55);
   --btn-border: rgb(45, 45, 45);
   --btn-hover: rgb(69, 69, 69);
+  --text: white;
 }
 
 /* pages/index */
@@ -31,6 +33,7 @@
   align-self: center;
 }
 .install button {
+  color: var(--text);
   background-color: var(--btn);
   border: 1px solid var(--btn-border);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
