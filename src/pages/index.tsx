@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
     {
       path: "/changelog",
       blank: false,
-      title: "v1.3.0",
+      title: "New in v1.3.0",
       body: `No more unused styling. Generate a custom CSS stylesheet 🎉`,
     },
   ];
