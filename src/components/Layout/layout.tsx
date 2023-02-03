@@ -19,7 +19,11 @@ function Code({ preview, html, jsx }) {
     <Tabs>
       <TabItem value="preview" label="Preview" default>
         {preview.map((row) => {
-          return <div className="flex">{row}</div>;
+          return (
+            <div className="flexContainer">
+              <div className="flex">{row}</div>
+            </div>
+          );
         })}
       </TabItem>
       <TabItem value="html" label="HTML">
