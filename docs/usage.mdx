@@ -44,9 +44,18 @@ Clicking on an optional class variation, ex. `variation1` or `square` in the bel
   }}
   preview={[
     <>
-      <button class="btn rounded md darker">button</button>
+      <button class="btn rounded md h-darker">button</button>
     </>,
   ]}
   html='<button class="btn rounded md darker">HTML</button>'
   jsx='<button className="btn rounded md darker">REACT</button>'
 />
+
+### Primary Color
+
+- If a color option is not specified, components will be set to the `primary` color. In the documentation examples, primary is light blue.
+- Set your own primary hex color with the command
+
+```zsh
+npx sproutcss --primary #6daebe
+```
