@@ -27,7 +27,7 @@ Develop with the entire SproutCSS stylesheet and when you're ready for Productio
 
 :::
 
-1. Copy and paste [components](/docs/usage) as needed.
-2. When you're ready, [generate a custom stylesheet](/docs/custom-stylesheet).
+3. Copy and paste [components](/docs/usage) as needed.
+4. When you're ready, [generate a custom stylesheet](/docs/custom-stylesheet).
 
 
