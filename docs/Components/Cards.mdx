@@ -20,7 +20,7 @@ import Layout from "../../src/components/Layout/layout";
       },
       {
         name: "color",
-        choices: "primary black red orange yellow green blue purple pink",
+        choices: "black white grey red orange yellow green blue purple pink",
       },
       {
         name: "shadow",
@@ -29,7 +29,7 @@ import Layout from "../../src/components/Layout/layout";
       {
         name: "h-color",
         choices:
-          "h-primary h-black h-red h-orange h-yellow h-green h-blue h-purple h-pink",
+          "h-primary h-white h-black h-grey h-red h-orange h-yellow h-green h-blue h-purple h-pink",
       },
       {
         name: "h-shadow",
@@ -39,10 +39,10 @@ import Layout from "../../src/components/Layout/layout";
   }}
   preview={[
     <>
-      <div className="crd sm shadow rounded">
+      <div className="crd sm white shadow rounded">
         <h4>Hi! I'm a card.</h4>
       </div>
-      <div className="crd md primary rounded">
+      <div className="crd md grey rounded">
         <h4>Hi! I'm a card.</h4>
       </div>
       <div className="crd lg h-orange black square">
@@ -50,7 +50,7 @@ import Layout from "../../src/components/Layout/layout";
       </div>
     </>,
   ]}
-  html='<div class="crd sm rounded shadow">{children}</div>'
+  html='<div class="crd sm white rounded shadow">{children}</div>'
   jsx='<div className="crd lg h-orange black square">{children}</div>'
 />
 
@@ -74,7 +74,7 @@ import Layout from "../../src/components/Layout/layout";
       },
       {
         name: "color",
-        choices: "primary red orange yellow green blue purple pink",
+        choices: "black white grey red orange yellow green blue purple pink",
       },
       {
         name: "shadow",
@@ -83,7 +83,7 @@ import Layout from "../../src/components/Layout/layout";
       {
         name: "h-color",
         choices:
-          "h-primary h-black h-red h-orange h-yellow h-green h-blue h-purple h-pink",
+          "h-primary h-black h-white h-grey h-red h-orange h-yellow h-green h-blue h-purple h-pink",
       },
       {
         name: "h-shadow",
@@ -93,7 +93,7 @@ import Layout from "../../src/components/Layout/layout";
   }}
   preview={[
     <>
-      <div className="otln-crd sm shadow square">
+      <div className="otln-crd sm black shadow square">
         <h4>Hi! I'm a card.</h4>
       </div>
       <div className="otln-crd md green h-pink rounded b-three">
