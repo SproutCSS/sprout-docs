@@ -1,0 +1,7 @@
+{
+    "path": "./sproutcss/sprout.css",
+    "files": [
+        "tsx",
+        "mdx"
+    ]
+}
