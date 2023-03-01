@@ -1,6 +1,6 @@
 # Sprout Docs 🌱
 
-The documentation for [SproutCSS](https://sprout-docs.vercel.app), a tiny CSS package.
+The documentation for [SproutCSS](https://github.com/SproutCSS/sproutcss), a tiny CSS package.
 
 #### Built with
 - [Docusaurus 2](https://docusaurus.io/) - modern static website generator.
